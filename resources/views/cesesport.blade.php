@@ -16,31 +16,31 @@
     <meta name="author" content="">
     <title>Ces'Esport</title>
     <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="Stylesheet">
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('public/favicon/apple-icon-57x57.png') }}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('public/favicon/apple-icon-60x60.png') }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('public/favicon/apple-icon-72x72.png') }}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('public/favicon/apple-icon-76x76.png') }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('public/favicon/apple-icon-114x114.png') }}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('public/favicon/apple-icon-120x120.png') }}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('public/favicon/apple-icon-144x144.png') }}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('public/favicon/apple-icon-152x152.png') }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('public/favicon/apple-icon-180x180.png') }}">
-    <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('public/favicon/android-icon-192x192.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('public/favicon/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('public/favicon/favicon-96x96.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('public/favicon/favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ asset('public/favicon/manifest.json') }}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('favicon/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('favicon/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('favicon/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('favicon/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('favicon/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('favicon/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('favicon/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('favicon/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('favicon/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('favicon/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('favicon/manifest.json') }}">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="{{ asset('public/favicon/ms-icon-144x144.png') }}">
+    <meta name="msapplication-TileImage" content="{{ asset('favicon/ms-icon-144x144.png') }}">
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Khand|Poppins" rel="stylesheet">
-    <link href="{{ asset('public/css/bootstrap.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/css/cesesport.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/cesesport.css') }}" rel="stylesheet">
     <script src="https://use.fontawesome.com/344e3c0bc9.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="{{ asset('public/js/bootstrap.js') }}"></script>
-    <script src="{{ asset('public/js/script.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
 </head>
 <body>
 <div class="header-main d-none d-xl-block">
@@ -48,7 +48,7 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="logo-header mr-auto ml-auto">
-                    <img src="{{ asset('public/site-img/Logo.png') }}" alt="logo">
+                    <img src="{{ asset('site-img/Logo.png') }}" alt="logo">
                 </div>
             </div>
             <div class="col-sm-6">
@@ -228,17 +228,17 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="sponsor">
-                        <img src="{{ asset('public/site-img/Logo discord.png') }}">
+                        <img src="{{ asset('site-img/Logo discord.png') }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="sponsor">
-                        <img src="{{ asset('public/site-img/logo-exia.png') }}">
+                        <img src="{{ asset('site-img/logo-exia.png') }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="sponsor">
-                        <img src="{{ asset('public/site-img/fgh.png') }}">
+                        <img src="{{ asset('site-img/fgh.png') }}">
                     </div>
                 </div>
             </div>
@@ -259,7 +259,7 @@
             <div class="col-sm-12 assos-member">
                 <h1>Membres</h1>
                 <div class="media">
-                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('public/site-img/v_paul-fontaine.jpg ') }}" alt="Generic placeholder image">
+                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/v_paul-fontaine.jpg ') }}" alt="Generic placeholder image">
                     <div class="media-body">
                         <h3 class="mt-0">Paul Fontaine</h3>
                         <p>Président de l'assosiation, Etudiant de l'EXIA. Aussi connu sous le mysterieux pseudonyme du " Velouté de Champignons ". Il est maitre dans l'art de maniere les serveurs Counter Strike et de manger des cheaters au petit dejeuner.</p>
@@ -267,7 +267,7 @@
                 </div>
                 <br>
                 <div class="media">
-                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('public/site-img/Discord.png') }}" alt="Generic placeholder image">
+                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/Discord.png') }}" alt="Generic placeholder image">
                     <div class="media-body">
                         <h3 class="mt-0">Clément Lesage</h3>
                         <p> Trésorier et fidéle bras droit de cette assosiation, Etudiant de l'EXIA. Il est le web developeur de l'assosiation, il parait qu'il a cacher des trucs un peu partout sur ce site.. mais nous n'avons pas plus d'information a ce sujet.</p>
@@ -275,7 +275,7 @@
                 </div>
                 <br>
                 <div class="media">
-                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('public/site-img/sale_geule.jpg') }}" alt="Generic placeholder image">
+                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/sale_geule.jpg') }}" alt="Generic placeholder image">
                     <div class="media-body">
                         <h3 class="mt-0">Virgile Marand</h3>
                         <p> Virgile, l'homme présent depuis le début, admin de tournois légendaire et amateur d'ordinateur improbable.</p>
@@ -283,7 +283,7 @@
                 </div>
                 <br>
                 <div class="media">
-                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('public/site-img/v_rohel-pierre_1507556190756-jpg.png') }}" alt="Generic placeholder image">
+                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/v_rohel-pierre_1507556190756-jpg.png') }}" alt="Generic placeholder image">
                     <div class="media-body">
                         <h3 class="mt-0">Pierre Rohel</h3>
                         <p>  Pierre, un dévoué membre du ces'esport, aussi sympatique que bel homme.</p>
@@ -291,7 +291,7 @@
                 </div>
                 <br>
                 <div class="media">
-                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('public/site-img/v_foltzer-matthieu_1507555905515-jpg.jpg') }}" alt="Generic placeholder image">
+                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/v_foltzer-matthieu_1507555905515-jpg.jpg') }}" alt="Generic placeholder image">
                     <div class="media-body">
                         <h3 class="mt-0">Matthieu Foltzer</h3>
                         <p>  Matthieu, notre barbu préférer inspirant la jalousie a l'égard de sa pillosité facial, mais aussi : Community manager de renom, représentant le ces esport dans le monde froid et sans pitier des réseaux sociaux</p>
@@ -299,7 +299,7 @@
                 </div>
                 <br>
                 <div class="media">
-                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('public/site-img/Discord.png') }}" alt="Generic placeholder image">
+                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/Discord.png') }}" alt="Generic placeholder image">
                     <div class="media-body">
                         <h3 class="mt-0">Fabrice Maloyer</h3>
                         <p> Fabrice, notre dévoué secrétaire, pret a tout quand il s'agit d'envoyer des mails, signer des papiers et blamer Fanny.</p>
