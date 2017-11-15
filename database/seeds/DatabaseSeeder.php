@@ -12,12 +12,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         Eloquent::unguard();
-        $this->call(UsersTableSeeder::class);
         $this->call('GameTableSeeder');
-        $this->call('GameUserSeeder');
         $this->call('CesEsportTeamSeeder');
         $this->call('PlateformeTableSeeder');
-        $this->call('PlateformeUserTableSeeder');
         $this->call('RankTableSeeder');
     }
 }
