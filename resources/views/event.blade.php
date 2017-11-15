@@ -28,7 +28,7 @@ $count = 0;
                     <h2>Pas d'évents de prévus pour l'instant</h2>
                     <br>
                     <br>
-                    <img src="{{ asset('public/site-img/dog-anim.gif') }}" >
+                    <img src="{{ asset('site-img/dog-anim.gif') }}" >
                 </div>
             </div>
             @else
@@ -62,10 +62,10 @@ $count = 0;
                 <div class="row equal justify-content-center" style="margin-bottom: 20px">
                     <div class="col-sm-3 event">
                         <div class="row event-logo">
-                            <img class="mr-auto ml-auto" src="{{ asset('public/site-img/Logo.png') }}" alt="event type : interne" style="height: 64px">
+                            <img class="mr-auto ml-auto" src="{{ asset('site-img/Logo.png') }}" alt="event type : interne" style="height: 64px">
                         </div>
                         <div class="row event-card">
-                            <div class="event-head-bg" style="background-image: url('{{ asset('public/event-banner/default-event-banner.png') }}');"></div>
+                            <div class="event-head-bg" style="background-image: url('{{ asset('event-banner/default-event-banner.png') }}');"></div>
                             <div class="row event-head">
                                 <div class="col-sm-12">
                                     <p class="event-title">{{$event->name}}</p>
@@ -81,7 +81,7 @@ $count = 0;
                                 <div class="row event-content-games">
                                     @foreach($event->games as $game)
                                         <div class="col-sm-4">
-                                            <img class="mr-auto ml-auto" src="{{ asset('public/games-logo/'. $game->logo) }}" alt="jeu : interne" style="height: 64px">
+                                            <img class="mr-auto ml-auto" src="{{ asset('games-logo/'. $game->logo) }}" alt="jeu : interne" style="height: 64px">
                                         </div>
                                     @endforeach
                                 </div>
@@ -93,13 +93,13 @@ $count = 0;
                                 </div>
                                 <div class="row event-content-rewards">
                                     <div class="col-sm-4">
-                                        <img class="" src="{{ asset('public/console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
+                                        <img class="" src="{{ asset('console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
                                     </div>
                                     <div class="col-sm-4">
-                                        <img class="" src="{{ asset('public/console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
+                                        <img class="" src="{{ asset('console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
                                     </div>
                                     <div class="col-sm-4">
-                                        <img class="" src="{{ asset('public/console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
+                                        <img class="" src="{{ asset('console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
                                     </div>
                                 </div>
                             </div>
@@ -126,10 +126,10 @@ $count = 0;
                     @if($count < 3 && $count > 1)
                         <div class="col-sm-3 offset-sm-1 event">
                             <div class="row event-logo">
-                                <img class="mr-auto ml-auto" src="{{ asset('public/site-img/Logo.png') }}" alt="event type : interne" style="height: 64px">
+                                <img class="mr-auto ml-auto" src="{{ asset('site-img/Logo.png') }}" alt="event type : interne" style="height: 64px">
                             </div>
                             <div class="row event-card">
-                                <div class="event-head-bg" style="background-image: url('{{ asset('public/event-banner/default-event-banner.png') }}');"></div>
+                                <div class="event-head-bg" style="background-image: url('{{ asset('event-banner/default-event-banner.png') }}');"></div>
                                 <div class="row event-head">
                                     <div class="col-sm-12">
                                         <p class="event-title">{{$event->name}}</p>
@@ -146,7 +146,7 @@ $count = 0;
                                     <div class="row event-content-games">
                                         @foreach($event->games as $game)
                                             <div class="col-sm-4">
-                                                <img class="mr-auto ml-auto" src="{{ asset('public/games-logo/'. $game->logo) }}" alt="jeu : interne" style="height: 64px">
+                                                <img class="mr-auto ml-auto" src="{{ asset('games-logo/'. $game->logo) }}" alt="jeu : interne" style="height: 64px">
                                             </div>
                                         @endforeach
                                     </div>
@@ -158,13 +158,13 @@ $count = 0;
                                     </div>
                                     <div class="row event-content-rewards">
                                         <div class="col-sm-4">
-                                            <img class="" src="{{ asset('public/console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
+                                            <img class="" src="{{ asset('console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
                                         </div>
                                         <div class="col-sm-4">
-                                            <img class="" src="{{ asset('public/console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
+                                            <img class="" src="{{ asset('console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
                                         </div>
                                         <div class="col-sm-4">
-                                            <img class="" src="{{ asset('public/console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
+                                            <img class="" src="{{ asset('console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
                                         </div>
                                     </div>
                                 </div>
@@ -191,10 +191,10 @@ $count = 0;
                     @if($count == 3)
                         <div class="col-sm-3 offset-sm-1 event">
                             <div class="row event-logo">
-                                <img class="mr-auto ml-auto" src="{{ asset('public/site-img/Logo.png') }}" alt="event type : interne" style="height: 64px">
+                                <img class="mr-auto ml-auto" src="{{ asset('site-img/Logo.png') }}" alt="event type : interne" style="height: 64px">
                             </div>
                             <div class="row event-card">
-                                <div class="event-head-bg" style="background-image: url('{{ asset('public/event-banner/default-event-banner.png') }}');"></div>
+                                <div class="event-head-bg" style="background-image: url('{{ asset('event-banner/default-event-banner.png') }}');"></div>
                                 <div class="row event-head">
                                     <div class="col-sm-12">
                                         <p class="event-title">{{$event->name}}</p>
@@ -210,7 +210,7 @@ $count = 0;
                                     <div class="row event-content-games">
                                         @foreach($event->games as $game)
                                             <div class="col-sm-4">
-                                                <img class="mr-auto ml-auto" src="{{ asset('public/games-logo/'. $game->logo) }}" alt="jeu : interne" style="height: 64px">
+                                                <img class="mr-auto ml-auto" src="{{ asset('games-logo/'. $game->logo) }}" alt="jeu : interne" style="height: 64px">
                                             </div>
                                         @endforeach
                                     </div>
@@ -222,13 +222,13 @@ $count = 0;
                                     </div>
                                     <div class="row event-content-rewards">
                                         <div class="col-sm-4">
-                                            <img class="" src="{{ asset('public/console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
+                                            <img class="" src="{{ asset('console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
                                         </div>
                                         <div class="col-sm-4">
-                                            <img class="" src="{{ asset('public/console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
+                                            <img class="" src="{{ asset('console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
                                         </div>
                                         <div class="col-sm-4">
-                                            <img class="" src="{{ asset('public/console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
+                                            <img class="" src="{{ asset('console-logo/Aucune.png') }}" alt="Rewards : Test" style="height: 64px">
                                         </div>
                                     </div>
                                 </div>
@@ -287,7 +287,7 @@ $count = 0;
                                     <div class="form-check">
                                         <label class="form-check-label">
                                             <input class="form-check-input" type="checkbox" name="game{{$countgame}}" value="{{$game->id}}" style="position: absolute; top: 50%; transform: translateY(-50%);">
-                                            <img class="mr-auto ml-auto" src="{{ asset('public/games-logo/'. $game->logo) }}" alt="jeu : interne" style="height: 64px">
+                                            <img class="mr-auto ml-auto" src="{{ asset('games-logo/'. $game->logo) }}" alt="jeu : interne" style="height: 64px">
                                             {{$game->name}}
                                         </label>
                                     </div>

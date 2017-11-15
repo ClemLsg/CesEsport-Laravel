@@ -18,7 +18,7 @@
         $lol = $users->lol;
         $admin = $users->admin;
 
-$path = 'public/profile-pics/' . $logo;
+$path = 'profile-pics/' . $logo;
 
 $preve = 0;
 
@@ -108,7 +108,7 @@ $preve = 0;
                             @else
                                 <div class="row">
                                     <div class="col-sm-4">
-                                        <img src="{{ asset('public/games-logo/'. $cesiteam->game->first()->logo) }}" style="height: 128px; width: 128px">
+                                        <img src="{{ asset('games-logo/'. $cesiteam->game->first()->logo) }}" style="height: 128px; width: 128px">
                                     </div>
                                     <div class="col-sm-4">
                                         <div class="container">
@@ -170,7 +170,7 @@ $preve = 0;
                             </form>
                         </li>
                         <li class="list-group-item" id="battle-compte">
-                            <img src="{{ asset('public/site-img/Blizzard_app-OSX_1024x1024_icon.png') }}" style="height: 32px; width: 32px">
+                            <img src="{{ asset('site-img/Blizzard_app-OSX_1024x1024_icon.png') }}" style="height: 32px; width: 32px">
                             &nbsp
                             {{$battle}}
                             &nbsp
@@ -190,7 +190,7 @@ $preve = 0;
                             </form>
                         </li>
                         <li class="list-group-item" id="lol-compte">
-                            <img src="{{ asset('public/site-img/League_of_Legends_Icon.png') }}" style="height: 32px; width: 32px">
+                            <img src="{{ asset('site-img/League_of_Legends_Icon.png') }}" style="height: 32px; width: 32px">
                             &nbsp
                             {{$lol}}
                             &nbsp
@@ -218,7 +218,7 @@ $preve = 0;
                     <ul class="list-group list-group-flush">
                         @foreach($gameuser as $gamuse)
                             <li class="list-group-item" id="jeu{{$loop->iteration}}-compte">
-                                <img src="{{ asset('public/games-logo/' . $gamuse->logo) }}" style="height: 32px; width: 32px">
+                                <img src="{{ asset('games-logo/' . $gamuse->logo) }}" style="height: 32px; width: 32px">
                                 &nbsp
                                 {{$gamuse->name}}
                                 &nbsp
@@ -249,7 +249,7 @@ $preve = 0;
                     <ul class="list-group list-group-flush">
                         @foreach($plateforme as $plateformeu)
                             <li class="list-group-item" id="console{{$loop->iteration}}-compte">
-                                <img src="{{ asset('public/console-logo/' . $plateformeu->logo) }}" style="height: 32px; width: 32px">
+                                <img src="{{ asset('console-logo/' . $plateformeu->logo) }}" style="height: 32px; width: 32px">
                                 &nbsp
                                 {{$plateformeu->name}}
                                 &nbsp
@@ -304,7 +304,7 @@ $preve = 0;
                                                                 @endphp
                                                                 <div class="col-sm-4">
                                                                     <i class="fa fa-check fa-2x" aria-hidden="true" style="color: #1c7430;position: absolute; top: 50%; transform: translateY(-50%);"></i>
-                                                                    <img src="{{ asset('public/games-logo/'.$gami->logo) }}" style="height: 64px; width: 64px; margin-left: 32px">
+                                                                    <img src="{{ asset('games-logo/'.$gami->logo) }}" style="height: 64px; width: 64px; margin-left: 32px">
                                                                 </div>
                                                             @endforeach
                                                         </div>

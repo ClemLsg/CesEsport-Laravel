@@ -228,7 +228,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="sponsor">
-                        <img src="{{ asset('site-img/Logo discord.png') }}">
+                        <img src="{{ asset('site-img/Logo_discord.png') }}">
                     </div>
                 </div>
                 <div class="col-sm-4">

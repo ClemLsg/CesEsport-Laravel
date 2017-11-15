@@ -43,8 +43,8 @@
                         <tr class="table-active">
                             <th align="center">{{$loop->iteration}}</th>
                             <td style="position: relative; padding-top: 34px" align="center">
-                                <img src="{{'public/profile-pics/'. $user->logo}}" class="compte-profile-pp first-crown" alt="logo" style="width: 64px; height: 64px">
-                                <img src="{{'public/site-img/crown.png'}}" style="width: 48px; height: 48px; position: absolute; left: 0; right: 0; margin: 0 auto; top: 0">
+                                <img src="{{'profile-pics/'. $user->logo}}" class="compte-profile-pp first-crown" alt="logo" style="width: 64px; height: 64px">
+                                <img src="{{'site-img/crown.png'}}" style="width: 48px; height: 48px; position: absolute; left: 0; right: 0; margin: 0 auto; top: 0">
                             </td>
                             <td>{{$user->name}}</td>
                             <td>{{$user->points}}</td>
@@ -58,8 +58,8 @@
                         <tr>
                             <th align="center">{{$loop->iteration}}</th>
                             <td style="position: relative; padding-top: 34px" align="center">
-                                <img src="{{'public/profile-pics/'. $user->logo}}" class="compte-profile-pp first-crown" alt="logo" style="width: 64px; height: 64px">
-                                <img src="{{'public/site-img/crown.png'}}" style="width: 48px; height: 48px; position: absolute; left: 0; right: 0; margin: 0 auto; top: 0">
+                                <img src="{{'profile-pics/'. $user->logo}}" class="compte-profile-pp first-crown" alt="logo" style="width: 64px; height: 64px">
+                                <img src="{{'site-img/crown.png'}}" style="width: 48px; height: 48px; position: absolute; left: 0; right: 0; margin: 0 auto; top: 0">
                             </td>
                             <td>{{$user->name}}</td>
                             <td>{{$user->points}}</td>
@@ -73,7 +73,7 @@
                 @elseif( isset(Auth::user()->id) AND $user->id == Auth::user()->id)
                     <tr class="table-active">
                         <th align="center">{{$loop->iteration}}</th>
-                        <td align="center"><img src="{{'public/profile-pics/'. $user->logo}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
+                        <td align="center"><img src="{{'profile-pics/'. $user->logo}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
                         <td>{{$user->name}}</td>
                         <td>{{$user->points}}</td>
                         <td>
@@ -86,7 +86,7 @@
                     @if($loop->iteration > 10)
                         <tr>
                             <th align="center">{{$loop->iteration}}</th>
-                            <td align="center"><img src="{{'public/profile-pics/'. $user->logo}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
+                            <td align="center"><img src="{{'profile-pics/'. $user->logo}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
                             <td>{{$user->name}}</td>
                             <td>{{$user->points}}</td>
                             <td>
@@ -98,7 +98,7 @@
                     @else
                         <tr>
                             <th align="center">{{$loop->iteration}}</th>
-                            <td align="center"><img src="{{'public/profile-pics/'. $user->logo}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
+                            <td align="center"><img src="{{'profile-pics/'. $user->logo}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
                             <td>{{$user->name}}</td>
                             <td>{{$user->points}}</td>
                             <td>
@@ -117,7 +117,7 @@
                         <tfoot>
                             <tr class="table-active">
                                 <th align="center">{{$loop->iteration}}</th>
-                                <td align="center"><img src="{{'public/profile-pics/'. $user->logo}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
+                                <td align="center"><img src="{{'profile-pics/'. $user->logo}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
                                 <td>{{$user->name}}</td>
                                 <td>{{$user->points}}</td>
                                 <td>

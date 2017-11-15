@@ -34,23 +34,23 @@
     <div class="container userprofile-header-content hidden-lg-down">
         <div class="row justify-content-center" style="width: 100vw">
             <div class="col-sm-2">
-                <img src="{{ asset('public/profile-pics/'. $users->logo) }}" alt="logo" style="width: 128px; border-radius: 50%">
+                <img src="{{ asset('profile-pics/'. $users->logo) }}" alt="logo" style="width: 128px; border-radius: 50%">
             </div>
             <div class="col-sm-2">
-                <img src="{{ asset('public/site-img/mushroom.png') }}" alt="logo" style="width: 128px">
+                <img src="{{ asset('site-img/mushroom.png') }}" alt="logo" style="width: 128px">
                 <p style="color: white">{{$users->points}} shrooms</p>
             </div>
             <div class="col-sm-2">
                 @if($users->admin == 1)
-                    <img src="{{ asset('public/site-img/admin.png') }}" alt="logo" style="width: 128px">
+                    <img src="{{ asset('site-img/admin.png') }}" alt="logo" style="width: 128px">
                 @elseif($users->cesmember == 1)
                     @if($users->accept == 1)
-                        <img src="{{ asset('public/site-img/Logo.png') }}" alt="logo" style="width: 128px">
+                        <img src="{{ asset('site-img/Logo.png') }}" alt="logo" style="width: 128px">
                     @else
-                        <img src="{{ asset('public/site-img/logo-groupeCesi.png') }}" alt="logo" style="width: 128px">
+                        <img src="{{ asset('site-img/logo-groupeCesi.png') }}" alt="logo" style="width: 128px">
                     @endif
                 @else
-                    <img src="{{ asset('public/site-img/Logo.png') }}" alt="logo" style="width: 128px">
+                    <img src="{{ asset('site-img/Logo.png') }}" alt="logo" style="width: 128px">
                 @endif
             </div>
         </div>
@@ -58,23 +58,23 @@
     <div class="container userprofile-header-content-mobile hidden-xl-up hidden-xs-down">
         <div class="row justify-content-center" style="width: 100vw">
             <div class="col-sm-2">
-                <img src="{{ asset('public/profile-pics/'. $users->logo) }}" alt="logo" style="width: 128px; border-radius: 50%">
+                <img src="{{ asset('profile-pics/'. $users->logo) }}" alt="logo" style="width: 128px; border-radius: 50%">
             </div>
             <div class="col-sm-2">
-                <img src="{{ asset('public/site-img/mushroom.png') }}" alt="logo" style="width: 128px">
+                <img src="{{ asset('site-img/mushroom.png') }}" alt="logo" style="width: 128px">
                 <p style="color: white">{{$users->points}} shrooms</p>
             </div>
             <div class="col-sm-2">
                 @if($users->admin == 1)
-                    <img src="{{ asset('public/site-img/admin.png') }}" alt="logo" style="width: 128px">
+                    <img src="{{ asset('site-img/admin.png') }}" alt="logo" style="width: 128px">
                 @elseif($users->cesmember == 1)
                     @if($users->accept == 1)
-                        <img src="{{ asset('public/site-img/Logo.png') }}" alt="logo" style="width: 128px">
+                        <img src="{{ asset('site-img/Logo.png') }}" alt="logo" style="width: 128px">
                     @else
-                        <img src="{{ asset('public/site-img/logo-groupeCesi.png') }}" alt="logo" style="width: 128px">
+                        <img src="{{ asset('site-img/logo-groupeCesi.png') }}" alt="logo" style="width: 128px">
                     @endif
                 @else
-                    <img src="{{ asset('public/site-img/Logo.png') }}" alt="logo" style="width: 128px">
+                    <img src="{{ asset('site-img/Logo.png') }}" alt="logo" style="width: 128px">
                 @endif
             </div>
         </div>
@@ -118,7 +118,7 @@
                         <div class="row">
                             @foreach($users->jeux as $game)
                                 <div class="col-sm-4">
-                                    <img src="{{ asset('public/games-logo/'. $game->logo) }}" alt="logo" style="width: 64px">
+                                    <img src="{{ asset('games-logo/'. $game->logo) }}" alt="logo" style="width: 64px">
                                     <p>{{$game->name}}</p>
                                 </div>
                             @endforeach
@@ -134,7 +134,7 @@
                         <div class="row">
                             @foreach($users->plateforme as $plat)
                                 <div class="col-sm-4">
-                                    <img src="{{ asset('public/console-logo/'. $plat->logo) }}" alt="logo" style="width: 64px">
+                                    <img src="{{ asset('console-logo/'. $plat->logo) }}" alt="logo" style="width: 64px">
                                     <p>{{$plat->name}}</p>
                                 </div>
                             @endforeach
@@ -155,7 +155,7 @@
                         @else
                         @foreach($users->badge as $badge)
                             <div class="col-sm-4">
-                                <img src="{{ asset('public/badges-logo/'. $badge->logo) }}" alt="logo" style="width: 64px">
+                                <img src="{{ asset('badges-logo/'. $badge->logo) }}" alt="logo" style="width: 64px">
                                 <p>{{$badge->name}}</p>
                             </div>
                         @endforeach
@@ -201,7 +201,7 @@
                             @endif
                         </div>
                         <div class="col-sm-3" align="center">
-                            <img src="{{ asset('public/site-img/Blizzard_app-OSX_1024x1024_icon.png') }}" style="height: 32px; width: 32px">
+                            <img src="{{ asset('site-img/Blizzard_app-OSX_1024x1024_icon.png') }}" style="height: 32px; width: 32px">
                             @if( $users->battlenet == "Entrez votre pseudo Battle.net")
                                 <p>Aucun Pseudo</p>
                             @else
@@ -209,7 +209,7 @@
                             @endif
                         </div>
                         <div class="col-sm-3" align="center">
-                            <img src="{{ asset('public/site-img/League_of_Legends_Icon.png') }}" style="height: 32px; width: 32px">
+                            <img src="{{ asset('site-img/League_of_Legends_Icon.png') }}" style="height: 32px; width: 32px">
                             @if( $users->lol == "Entrez votre pseudo League of Legend")
                                 <p>Aucun Pseudo</p>
                             @else

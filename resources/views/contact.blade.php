@@ -21,31 +21,31 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-2" align="center">
-                <img src="{{ asset('public/site-img/at.png') }}" class="compte-profile-pp" alt="logo">
+                <img src="{{ asset('site-img/at.png') }}" class="compte-profile-pp" alt="logo">
                 <br>
                 <br>
                 <p>Email</p>
             </div>
             <div class="col-sm-2" align="center">
-                <img src="{{ asset('public/site-img/auricular-phone-symbol-in-a-circle.png') }}" class="compte-profile-pp" alt="logo">
+                <img src="{{ asset('site-img/auricular-phone-symbol-in-a-circle.png') }}" class="compte-profile-pp" alt="logo">
                 <br>
                 <br>
                 <p>Telephone</p>
             </div>
             <div class="col-sm-2" align="center">
-                <img src="{{ asset('public/site-img/social-facebook-circular-button.png') }}" class="compte-profile-pp" alt="logo">
+                <img src="{{ asset('site-img/social-facebook-circular-button.png') }}" class="compte-profile-pp" alt="logo">
                 <br>
                 <br>
                 <p>Facebook</p>
             </div>
             <div class="col-sm-2" align="center">
-                <img src="{{ asset('public/site-img/twitter-circular-button.png') }}" class="compte-profile-pp" alt="logo">
+                <img src="{{ asset('site-img/twitter-circular-button.png') }}" class="compte-profile-pp" alt="logo">
                 <br>
                 <br>
                 <p>Twitter</p>
             </div>
             <div class="col-sm-2" align="center">
-                <img src="{{ asset('public/site-img/discord_logo.png') }}" class="compte-profile-pp" alt="logo">
+                <img src="{{ asset('site-img/discord_logo.png') }}" class="compte-profile-pp" alt="logo">
                 <br>
                 <br>
                 <p>Discord</p>
