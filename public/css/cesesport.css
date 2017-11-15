@@ -1,0 +1,711 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+.header-main {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #f3f3f3;
+    border-bottom-color: rgba(255, 255, 255, 0.17);
+    z-index: 3;
+}
+
+.header-main-alt {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    z-index: 3;
+}
+
+.logo-header,
+.logo-header img{
+    width: 117px;
+    height: 117px;
+}
+
+.nav-header {
+    padding: 15px 0px;
+}
+
+.nav-header ul {
+    float: none;
+    margin: 0 auto;
+    display: table;
+    padding: 16px 0px;
+}
+
+.nav-header li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-header a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Khand', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-header a:hover{
+    color:  rgb(211,41,41);
+    text-decoration: none;
+}
+
+/*ALt Header*/
+
+.nav-header-alt {
+    padding: 15px 0px;
+}
+
+.nav-header-alt ul {
+    float: none;
+    margin: 0 auto;
+    display: table;
+    padding: 16px 0px;
+}
+
+.nav-header-alt li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-header-alt a{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-family: 'Khand', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-header-alt a:hover{
+    color:  rgb(211,41,41);
+    text-decoration: none;
+}
+
+/*End Alt Head*/
+
+.header-mobile a{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-family: 'Khand', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header-mobile a:hover{
+    color:  rgb(211,41,41) !important;
+    text-decoration: none;
+}
+
+.social-header {
+    padding: 15px 0px;
+}
+
+.social-links {
+    float: none;
+    margin: 0 auto;
+    display: table;
+    padding: 16px 0px;
+}
+
+.social-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.social-links li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.social-links a:hover{
+    color:  rgb(211,41,41);
+    text-decoration: none;
+}
+
+/*Alt social*/
+
+.social-links-alt {
+    float: none;
+    margin: 0 auto;
+    display: table;
+    padding: 16px 0px;
+}
+
+.social-links-alt a{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.social-links-alt li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.social-links-alt a:hover{
+    color:  rgb(211,41,41);
+    text-decoration: none;
+}
+/*End alt*/
+
+#carouselHeader {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#carouselHeader  .carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*#carouselHeader img{*/
+    /*height: 100vh;*/
+/*}*/
+
+li {
+    display: inline;
+}
+
+.dropdown-menu {
+    background-color: white;
+    border-top: 2px solid rgb(211,41,41);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.dropdown-menu a {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.content-hp {
+    z-index: 2;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.title {
+    font-family: 'Khand', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.content-hp-container {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.vertical-center {
+    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50%);
+}
+
+.title-page {
+    background-color: rgba(26, 26, 26, 0.7);
+    margin-bottom: 50px;
+}
+
+.title-page-bg {
+    background-image: url("https://fsmedia.imgix.net/5d/1f/1f/c4/6c61/43e4/9509/a70b8b46bc59/fanlive-bg-webjpg.jpeg");
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: -1;
+    width: 100vw;
+    height: 244px;
+    position: absolute;
+}
+
+.title-page h1 {
+    color: white;
+    font-family: 'Khand', sans-serif;
+    padding-top: 96px;
+        padding-bottom: 96px;
+    font-size: 48px;
+}
+
+.sponsors-wheel {
+    width: 100%;
+    background-color: rgba(211,41,41, 0.9);
+}
+
+#main-dropdown-menu {
+    display: none;
+}
+#main-dropdown:hover #main-dropdown-menu {
+    display: grid;
+}
+
+.sponsor-zone {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sponsor {
+    height: 96px;
+}
+
+.sponsor img{
+    height: 96px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.sponsor img:hover{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.assos {
+    background-color: rgba(26, 26, 26, 0.7);
+    display: flex;
+    overflow: hidden;
+}
+
+.assos-bg {
+    background-image: url("https://fsmedia.imgix.net/5d/1f/1f/c4/6c61/43e4/9509/a70b8b46bc59/fanlive-bg-webjpg.jpeg");
+
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+}
+
+.content-assos {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+}
+
+.content-assos h1{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.assos-about {
+    padding-right: 40px;
+    text-align: center;
+}
+
+.assos-member {
+    border-left: 2px solid #f3f3f3;
+    padding-left: 40px;
+    /*border-left-color: rgba(255, 255, 255, 0.17);*/
+}
+
+.pp-assos {
+    width:128px;
+    height:128px;
+    border-radius: 50%;
+    border: 4px solid rgba(211,41,41, 0.3);
+}
+
+.footer-maggle {
+    width: 100%;
+    background-color: #1a1a1a;
+}
+
+.copyright {
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 100px;
+}
+
+.copyright p{
+    margin: 0;
+}
+
+.btn-custo {
+    background: none;
+    color: white;
+    font-family: Khand, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border: 4px solid white;
+    border-radius: 25px;
+    padding: 10px 40px;
+    text-decoration: none;
+}
+
+.btn-custo:hover {
+    background: rgb(211,41,41);
+    border: 4px solid rgb(211,41,41);
+    color: white;
+}
+
+.btn-custo-inverted {
+    background: none;
+    color: #1a1a1a;
+    font-family: Khand, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border: 4px solid #1a1a1a;
+    border-radius: 25px;
+    padding: 10px 40px;
+    text-decoration: none;
+}
+
+.btn-custo-inverted:hover {
+    background: rgb(211,41,41);
+    border: 4px solid rgb(211,41,41);
+    color: #1a1a1a;
+}
+
+.a-custo {
+    color: white;
+}
+
+.a-custo:hover {
+    color: white;
+    color: rgb(211,41,41);
+}
+
+.a-custo-inverted {
+    color: #1a1a1a;
+}
+
+.a-custo-inverted:hover {
+    color: #1a1a1a;
+    color: rgb(211,41,41);
+}
+
+
+.carousel-bg {
+    background-color: rgba(26, 26, 26, 0.5);
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.compte-profile {
+    border-right: 2px solid rgba(0,0,0, 0.2);
+}
+
+.compte-profile-pp {
+    width: 128px;
+    border-radius: 50%;
+}
+
+.compte-profile-pp-edit{
+    position: absolute;
+    top: 0;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background-color: rgb(211,41,41);
+    text-align: center;
+    padding-top: 35px;
+    padding-left: 15px;
+    display: none;
+
+}
+
+.compte-profile-pp-data{
+    width: 128px;
+    height: 128px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.compte-profile-pp-data:hover .compte-profile-pp-edit{
+    display: block;
+}
+
+#compte-profile-pp-form {
+    display: none;
+}
+
+#bio-edit {
+    display: none;
+}
+
+#steam-compte-edit {
+    display: none;
+}
+#battle-compte-edit {
+    display: none;
+}
+#lol-compte-edit {
+    display: none;
+}
+#jeu1-compte-edit {
+    display: none;
+}
+#jeu2-compte-edit {
+    display: none;
+}
+#jeu3-compte-edit {
+    display: none;
+}
+
+#console1-compte-edit {
+    display: none;
+}
+#console2-compte-edit {
+    display: none;
+}
+#console3-compte-edit {
+    display: none;
+}
+
+.event {
+    margin-top: 64px;
+}
+
+.event-card {
+    padding: inherit;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0, 0.2);
+    overflow: hidden;
+}
+
+.event-logo {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -32px;
+}
+
+.event-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 32px;
+    font-family: 'Khand', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.event-head {
+    background-color: rgba(26, 26, 26, 0.5);
+    height: 108px;
+    width: 200%;
+}
+
+.event-head-bg {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 108px;
+    position: absolute;
+    z-index: -1;
+    left: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.event-head-progress {
+    width: 100%;
+    height: 108px;
+    position: absolute;
+    z-index: -1;
+    left: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: none;
+    overflow: hidden;
+    margin-right: 2px;
+    background: none;
+    margin-bottom: 0;
+}
+
+.event-head-progress .progress-bar {
+    z-index: -1;
+    height: 108px;
+    width: 100%;
+    background-color: #1a1a1a;
+    margin-bottom: 0;
+}
+
+.event-content, .event-content-games, .event-content-rewards {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.event-date {
+    margin-top: 5px;
+    font-size: 32px;
+    font-family: 'Khand', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.event-desc {
+    font-size: 16px;
+    font-family: 'Khand', sans-serif;
+    margin-bottom: 5px;
+}
+
+.event-head:hover .event-title{
+    display: none;
+}
+
+.event-head:hover{
+    background: none;
+}
+
+.event-head:hover + .event-head-progress{
+    display: block;
+}
+
+.event-head:hover + .progress-title{
+    display: block;
+}
+
+.progress-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: none;
+    background-color: rgba(26, 26, 26, 0.5);
+    margin-left: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.progress-title p {
+    margin-bottom: 0;
+}
+
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 160px;
+    padding: 4px 0;
+    margin: 0 0 10px 25px;
+    list-style: none;
+    background-color: #ffffff;
+    border-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+}
+
+.ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #555555;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.ui-state-hover, .ui-state-active {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0088cc;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-image: none;
+}
+
+.table td,
+.table th {
+    vertical-align:middle !important;
+}
+
+.first-crown{
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(255,191,0,1);
+    -moz-box-shadow: 0px 0px 0px 5px rgba(255,191,0,1);
+    box-shadow: 0px 0px 0px 5px rgba(255,191,0,1);
+}
+
+.progress-lead{
+    background-color: #1a1a1a;
+
+}
+
+.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .row.equal {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.userprofile-header{
+    width: 100vw;
+    height: 244px;
+    margin-bottom: 68px;
+    position: absolute;
+    top: 90px;
+    z-index: -1;
+}
+.userprofile-header-mobile{
+    width: 100vw;
+    height: 244px;
+    margin-bottom: 68px;
+    position: absolute;
+    top: 50.4px;
+    z-index: -1;
+}
+
+.userprofile-header-content{
+    position: absolute;
+    top: 148px;
+}
+
+.userprofile-header-content-mobile{
+    position: absolute;
+    top: 108.4px;
+}
