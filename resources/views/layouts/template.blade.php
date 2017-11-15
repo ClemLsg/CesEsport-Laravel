@@ -187,17 +187,17 @@
             </ul>
             <ul class="navbar-nav mr-auto" style="display: table">
                 <li>
-                    <a href="" title="Facebook" target="_blank">
+                    <a href="https://www.facebook.com/CesEsport/" title="Facebook" target="_blank">
                         <i class="fa fa-facebook"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="" title="Twitter" target="_blank">
+                    <a href="https://twitter.com/CesEsport" title="Twitter" target="_blank">
                         <i class="fa fa-twitter"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="" title="Twitch" target="_blank">
+                    <a href="https://www.twitch.tv/cesesport" title="Twitch" target="_blank">
                         <i class="fa fa-twitch"></i>
                     </a>
                 </li>
