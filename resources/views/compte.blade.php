@@ -52,7 +52,7 @@ $preve = 0;
                 </div>
                 <div class="card" id="compte-profile-pp-form">
                     <div class="card-block">
-                        <form method="POST" enctype="multipart/form-data" class="form-inline" action="/CesEsport/compte/{{Auth::user()->id}}">
+                        <form method="POST" enctype="multipart/form-data" class="form-inline" action="/compte/{{Auth::user()->id}}">
                             {{ csrf_field() }}
                             <div class="form-group">
                                 <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" name="avatar">
@@ -80,7 +80,7 @@ $preve = 0;
                     </div>
                     <div class="card-block">
                         <p class="card-title" id="bio">{{$bio}}</p>
-                        <form method="POST" enctype="multipart/form-data" action="/CesEsport/compte/{{Auth::user()->id}}" id="bio-edit">
+                        <form method="POST" enctype="multipart/form-data" action="/compte/{{Auth::user()->id}}" id="bio-edit">
                             {{ csrf_field() }}
                             <div class="form-group">
                                 <textarea class="form-control" id="exampleTextarea" rows=5" name="bio">{{$bio}}</textarea>
@@ -158,7 +158,7 @@ $preve = 0;
                             <a class="btn btn-info" class="card-link a-custo-inverted" onclick="$( '#steam-compte' ).toggle(); $( '#steam-compte-edit' ).toggle();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editer</a>
                         </li>
                         <li class="list-group-item" id="steam-compte-edit">
-                            <form class="form-inline" method="POST" enctype="multipart/form-data" action="/CesEsport/compte/{{Auth::user()->id}}">
+                            <form class="form-inline" method="POST" enctype="multipart/form-data" action="/compte/{{Auth::user()->id}}">
                                 {{ csrf_field() }}
                                 <div class="form-group">
                                     <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" name="steam">
@@ -178,7 +178,7 @@ $preve = 0;
 
                         </li>
                         <li class="list-group-item" id="battle-compte-edit">
-                            <form class="form-inline" method="POST" enctype="multipart/form-data" action="/CesEsport/compte/{{Auth::user()->id}}">
+                            <form class="form-inline" method="POST" enctype="multipart/form-data" action="/compte/{{Auth::user()->id}}">
                                 {{ csrf_field() }}
                                 <div class="form-group">
                                     <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" name="battle">
@@ -197,7 +197,7 @@ $preve = 0;
                             <a class="btn btn-info" class="card-link a-custo-inverted" onclick="$( '#lol-compte' ).toggle(); $( '#lol-compte-edit' ).toggle();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editer</a>
                         </li>
                         <li class="list-group-item" id="lol-compte-edit">
-                            <form class="form-inline" method="POST" enctype="multipart/form-data" action="/CesEsport/compte/{{Auth::user()->id}}">
+                            <form class="form-inline" method="POST" enctype="multipart/form-data" action="/compte/{{Auth::user()->id}}">
                                 {{ csrf_field() }}
                                 <div class="form-group">
                                     <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" name="lol">
@@ -225,7 +225,7 @@ $preve = 0;
                                 <a class="btn btn-info" class="card-link a-custo-inverted" onclick="$( '#jeu{{$loop->iteration}}-compte' ).toggle(); $( '#jeu{{$loop->iteration}}-compte-edit' ).toggle();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editer</a>
                             </li>
                             <li class="list-group-item" id="jeu{{$loop->iteration}}-compte-edit">
-                                <form class="form-inline" method="POST" enctype="multipart/form-data" action="/CesEsport/compte/{{Auth::user()->id}}">
+                                <form class="form-inline" method="POST" enctype="multipart/form-data" action="/compte/{{Auth::user()->id}}">
                                     {{ csrf_field() }}
                                     <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name="jeu{{$loop->iteration}}">
                                         @foreach($games as $game)
@@ -258,7 +258,7 @@ $preve = 0;
                                 <a class="btn btn-info" class="card-link a-custo-inverted" onclick="$( '#console{{$loop->iteration}}-compte' ).toggle(); $( '#console{{$loop->iteration}}-compte-edit' ).toggle();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editer</a>
                             </li>
                             <li class="list-group-item" id="console{{$loop->iteration}}-compte-edit">
-                                <form class="form-inline" method="POST" enctype="multipart/form-data" action="/CesEsport/compte/{{Auth::user()->id}}">
+                                <form class="form-inline" method="POST" enctype="multipart/form-data" action="/compte/{{Auth::user()->id}}">
                                     {{ csrf_field() }}
                                     <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name="console{{$loop->iteration}}">
                                         @foreach($plateformes as $plat)
