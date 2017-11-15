@@ -262,7 +262,7 @@
                     <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/v_paul-fontaine.jpg ') }}" alt="Generic placeholder image">
                     <div class="media-body">
                         <h3 class="mt-0">Paul Fontaine</h3>
-                        <p>Président de l'assosiation, Etudiant de l'EXIA. Aussi connu sous le mysterieux pseudonyme du " Velouté de Champignons ". Il est maitre dans l'art de maniere les serveurs Counter Strike et de manger des cheaters au petit dejeuner.</p>
+                        <p>Président de l'association, Etudiant de l'EXIA. Aussi connu sous le mysterieux pseudonyme du " Velouté de Champignons ". Il est maître dans l'art de manier les serveurs Counter Strike et de manger des cheaters au petit déjeuner.</p>
                     </div>
                 </div>
                 <br>
@@ -270,7 +270,7 @@
                     <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/Discord.png') }}" alt="Generic placeholder image">
                     <div class="media-body">
                         <h3 class="mt-0">Clément Lesage</h3>
-                        <p> Trésorier et fidéle bras droit de cette assosiation, Etudiant de l'EXIA. Il est le web developeur de l'assosiation, il parait qu'il a cacher des trucs un peu partout sur ce site.. mais nous n'avons pas plus d'information a ce sujet.</p>
+                        <p>Trésorier et fidèle bras droit de cette association, Etudiant de l'EXIA. Il est le web développeur de l'assosiation, il paraît qu'il a caché des trucs un peu partout sur ce site.. mais nous n'avons pas plus d'informations à ce sujet.</p>
                     </div>
                 </div>
                 <br>
@@ -278,7 +278,7 @@
                     <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/sale_geule.jpg') }}" alt="Generic placeholder image">
                     <div class="media-body">
                         <h3 class="mt-0">Virgile Marand</h3>
-                        <p> Virgile, l'homme présent depuis le début, admin de tournois légendaire et amateur d'ordinateur improbable.</p>
+                        <p>Virgile, l'homme présent depuis le début, admin légendaire de tournois et amateur d'ordinateurs improbables (Lenovo) .</p>
                     </div>
                 </div>
                 <br>
@@ -286,7 +286,7 @@
                     <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/v_rohel-pierre_1507556190756-jpg.png') }}" alt="Generic placeholder image">
                     <div class="media-body">
                         <h3 class="mt-0">Pierre Rohel</h3>
-                        <p>  Pierre, un dévoué membre du ces'esport, aussi sympatique que bel homme.</p>
+                        <p>Pierre, un dévoué membre du ces'esport, aussi sympathique que bel homme.</p>
                     </div>
                 </div>
                 <br>
@@ -294,7 +294,7 @@
                     <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/v_foltzer-matthieu_1507555905515-jpg.jpg') }}" alt="Generic placeholder image">
                     <div class="media-body">
                         <h3 class="mt-0">Matthieu Foltzer</h3>
-                        <p>  Matthieu, notre barbu préférer inspirant la jalousie a l'égard de sa pillosité facial, mais aussi : Community manager de renom, représentant le ces esport dans le monde froid et sans pitier des réseaux sociaux</p>
+                        <p>Matthieu, notre barbu préféré inspirant la jalousie à l'égard de sa pillosité faciale, mais aussi : Community manager de renom, représentant le ces esport dans le monde froid et sans pitié des réseaux sociaux</p>
                     </div>
                 </div>
                 <br>
@@ -302,7 +302,7 @@
                     <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/Discord.png') }}" alt="Generic placeholder image">
                     <div class="media-body">
                         <h3 class="mt-0">Fabrice Maloyer</h3>
-                        <p> Fabrice, notre dévoué secrétaire, pret a tout quand il s'agit d'envoyer des mails, signer des papiers et blamer Fanny.</p>
+                        <p>Fabrice, notre dévoué secrétaire, prêt à tout quand il s'agit d'envoyer des mails, signer des papiers et blamer Fanny.</p>
                     </div>
                 </div>
         </div>
