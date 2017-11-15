@@ -48,6 +48,13 @@ class CompteController extends Controller
             $prev = $test->id;
         }
 
+        $counti = 0;
+
+        foreach ($gameuser as $gami){
+            $gamelistuser[$counti] = $gami->id;
+            $counti++;
+        }
+
         $cesiteam = $users->cesiteam;
 
         $events = Event::count();
@@ -55,7 +62,7 @@ class CompteController extends Controller
         if ($users == null){
             return abort(404);
         }
-        return view('compte',  compact('users','solos','eventparticipesolo','eventparticipeteam', 'events', 'games','gameuser', 'gamelist', 'cesiteam', 'plateforme', 'plateformes'))->with('numero', $n);
+        return view('compte',  compact('users','solos','eventparticipesolo','eventparticipeteam', 'events', 'games','gameuser', 'gamelist', 'cesiteam', 'plateforme', 'plateformes', 'gamelistuser'))->with('numero', $n);
 
     }
 
