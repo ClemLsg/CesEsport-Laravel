@@ -229,7 +229,9 @@ $preve = 0;
                                     {{ csrf_field() }}
                                     <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name="jeu{{$loop->iteration}}">
                                         @foreach($games as $game)
-                                            <option value="{{$game->id}}" selected>{{$game->name}}</option>
+                                            @if($game->id != $gamuse->id)
+                                                <option value="{{$game->id}}" selected>{{$game->name}}</option>
+                                            @endif
                                         @endforeach
                                     </select>
                                     <div class="form-group">
