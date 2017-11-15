@@ -262,7 +262,9 @@ $preve = 0;
                                     {{ csrf_field() }}
                                     <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name="console{{$loop->iteration}}">
                                         @foreach($plateformes as $plat)
+                                            @if($plat->id != $plateformelistuser[0] AND $plat->id != $plateformelistuser[1] AND $plat->id != $plateformelistuser[2])
                                             <option value="{{$plat->id}}" selected>{{$plat->name}}</option>
+                                            @endif
                                         @endforeach
                                     </select>
                                     <div class="form-group">
