@@ -212,11 +212,11 @@
         <li data-target="#carouselHeader" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" style="background-image: url('http://eskipaper.com/images/league-of-legends-wallpaper-11.jpg')">
+        <div class="carousel-item active" style="background-image: url('{{ asset('site-img/league-of-legends-wallpaper-11.jpg') }}')">
         </div>
-        <div class="carousel-item" style="background-image: url('https://images2.alphacoders.com/800/800743.jpg')">
+        <div class="carousel-item" style="background-image: url('{{ asset('site-img/800743.jpg') }}')">
         </div>
-        <div class="carousel-item" style="background-image: url('https://images5.alphacoders.com/725/725340.png')">
+        <div class="carousel-item" style="background-image: url('{{ asset('site-img/725340.jpg') }}')">
         </div>
     </div>
 </div>
