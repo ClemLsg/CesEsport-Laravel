@@ -303,7 +303,7 @@
                     <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/Logo.png') }}" alt="Generic placeholder image">
                     <div class="media-body">
                         <h3 class="mt-0">Fabrice Maloyer</h3>
-                        <p>Fabrice, notre dévoué secrétaire, prêt à tout quand il s'agit d'envoyer des mails et signer des papiers</p>
+                        <p>Fabrice, notre dévoué secrétaire, prêt à tout quand il s'agit d'envoyer des mails et signer des papiers.</p>
                     </div>
                 </div>
         </div>
