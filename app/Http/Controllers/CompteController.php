@@ -4,6 +4,7 @@ namespace CesEsport\Http\Controllers;
 
 use CesEsport\Event;
 use CesEsport\Game;
+use CesEsport\Http\Requests\UserUpdateRequest;
 use CesEsport\Plateforme;
 use CesEsport\User;
 use Illuminate\Http\Request;
@@ -278,5 +279,11 @@ class CompteController extends Controller
 
             return redirect()->route('compte',['n' => Auth::user()->id]);
         }
+    }
+    public function update(UserUpdateRequest $request, $n)
+    {
+        $user = User::findOrFail($n);
+        $user->update($request->all());
+        return redirect()->route('compte',['n' => $n]);
     }
 }

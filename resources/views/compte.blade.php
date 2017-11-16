@@ -72,7 +72,26 @@ $preve = 0;
                     @endif
                     <a role="button" class="btn btn-custo-inverted" href="{{ route('user', ['n' => Auth::user()->id]) }}">VOIR MON PROFIL</a>
                 </h1>
-                <h2>{{$mail}}</h2>
+                <div class="row" id="email-compte">
+                    <div class="col-sm-8">
+                        <h2>{{$mail}}</h2>
+                    </div>
+                    <div class="col-sm-4">
+                        <a class="btn btn-info" class="card-link a-custo-inverted" onclick="$( '#email-compte' ).toggle(); $( '#email-compte-edit' ).toggle();"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editer</a>
+                    </div>
+                </div>
+                <div class="row" id="email-compte-edit">
+                    <form class="form-inline" method="POST" enctype="multipart/form-data" action="/CesEsport/compte-update/{{Auth::user()->id}}">
+                        {{ csrf_field() }}
+                        <div class="form-group">
+                            <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" name="email">
+                        </div>
+                        <div class="form-group">
+                            <a class="btn btn-danger" onclick="$( '#email-compte' ).toggle(); $( '#email-compte-edit' ).toggle();" style=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                            <button type="submit" class="btn btn-success" style="margin-left: 10px"><i class="fa fa-check" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </div>
                 <br>
                 <div class="card">
                     <div class="card-header">

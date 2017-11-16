@@ -28,6 +28,7 @@ Route::get('/leaderboard', 'LeaderboardController@index')->name('leaderboard');
 
 Route::get('/compte/{n}', 'CompteController@index')->name('compte');
 Route::post('/compte/{n}', 'CompteController@update_avatar');
+Route::post('/compte-update/{n}', 'CompteController@update');
 
 Route::get('/team-create/{p}/{n}', 'TeamCreateController@index')->name('team-create');
 Route::get('/team-create/autocomplete',array('as'=>'autocomplete','uses'=>'TeamCreateController@autocomplete'));

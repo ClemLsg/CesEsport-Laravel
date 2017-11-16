@@ -466,6 +466,10 @@ li {
     display: none;
 }
 
+#email-compte-edit{
+    display: none;
+}
+
 #console1-compte-edit {
     display: none;
 }
