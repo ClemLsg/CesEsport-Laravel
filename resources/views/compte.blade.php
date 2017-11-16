@@ -81,16 +81,18 @@ $preve = 0;
                     </div>
                 </div>
                 <div class="row" id="email-compte-edit">
-                    <form class="form-inline" method="POST" enctype="multipart/form-data" action="/CesEsport/compte-update/{{Auth::user()->id}}">
-                        {{ csrf_field() }}
-                        <div class="form-group">
-                            <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" name="email">
-                        </div>
-                        <div class="form-group">
-                            <a class="btn btn-danger" onclick="$( '#email-compte' ).toggle(); $( '#email-compte-edit' ).toggle();" style=""><i class="fa fa-times" aria-hidden="true"></i></a>
-                            <button type="submit" class="btn btn-success" style="margin-left: 10px"><i class="fa fa-check" aria-hidden="true"></i></button>
-                        </div>
-                    </form>
+                    <div class="col-sm-12" align="center">
+                        <form class="form-inline" method="POST" enctype="multipart/form-data" action="/CesEsport/compte-update/{{Auth::user()->id}}">
+                            {{ csrf_field() }}
+                            <div class="form-group">
+                                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" name="email">
+                            </div>
+                            <div class="form-group">
+                                <a class="btn btn-danger" onclick="$( '#email-compte' ).toggle(); $( '#email-compte-edit' ).toggle();" style=""><i class="fa fa-times" aria-hidden="true"></i></a>
+                                <button type="submit" class="btn btn-success" style="margin-left: 10px"><i class="fa fa-check" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <br>
                 <div class="card">
