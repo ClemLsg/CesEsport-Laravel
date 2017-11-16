@@ -251,8 +251,8 @@
             <div class="col-sm-12 assos-about">
                 <h1>Présentation de l'assossiation</h1>
                 <p>Nous sommes une branche du BDE du CESI EXIA, une école d'ingénieur en informatique localisée à Mont Saint Aignan.
-                    Notre équipe est composée de plusieurs étudiants de deuxièmes année passionnés de jeu vidéo. L'objet de notre association est d'organiser des
-                    événement autour de l'esport. Si vous voulez étre tenu au courant des news concernant notre assosiation, n'hésitez pas à "LIKE NOTRE PAGE FB" et "TWITTER".</p>
+                    Notre équipe est composée de plusieurs étudiants de deuxième année passionnés de jeu vidéo. L'objet de notre association est d'organiser des
+                    événements autour de l'esport. Si vous voulez être tenu au courant des news concernant notre association, n'hésitez pas à "LIKE NOTRE PAGE FB" et "TWITTER".</p>
             </div>
         </div>
         <div class="row">
@@ -270,7 +270,7 @@
                     <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/Discord.png') }}" alt="Generic placeholder image">
                     <div class="media-body">
                         <h3 class="mt-0">Clément Lesage</h3>
-                        <p>Trésorier et fidèle bras droit de cette association, Etudiant de l'EXIA. Il est le web développeur de l'assosiation, il paraît qu'il a caché des trucs un peu partout sur ce site.. mais nous n'avons pas plus d'informations à ce sujet.</p>
+                        <p>Trésorier et fidèle bras droit de cette association, Etudiant de l'EXIA. Il est le web développeur de l'association, il paraît qu'il a caché des trucs un peu partout sur ce site.. mais nous n'avons pas plus d'informations à ce sujet.</p>
                     </div>
                 </div>
                 <br>
