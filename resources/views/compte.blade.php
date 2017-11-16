@@ -82,7 +82,7 @@ $preve = 0;
                 </div>
                 <div class="row" id="email-compte-edit">
                     <div class="col-sm-12" align="center">
-                        <form class="form-inline" method="POST" enctype="multipart/form-data" action="/CesEsport/compte-update/{{Auth::user()->id}}">
+                        <form class="form-inline" method="POST" enctype="multipart/form-data" action="/compte-update/{{Auth::user()->id}}">
                             {{ csrf_field() }}
                             <div class="form-group">
                                 <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" name="email">
