@@ -33,14 +33,14 @@
     </div>
     <div class="container userprofile-header-content hidden-lg-down">
         <div class="row justify-content-center" style="width: 100vw">
-            <div class="col-sm-2">
+            <div class="col-sm-2" align="center">
                 <img src="{{ asset('profile-pics/'. $users->logo) }}" alt="logo" style="width: 128px; border-radius: 50%">
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2" align="center">
                 <img src="{{ asset('site-img/mushroom.png') }}" alt="logo" style="width: 128px">
                 <p style="color: white">{{$users->points}} shrooms</p>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2" align="center">
                 @if($users->admin == 1)
                     <img src="{{ asset('site-img/admin.png') }}" alt="logo" style="width: 128px">
                 @elseif($users->cesmember == 1)
@@ -57,14 +57,14 @@
     </div>
     <div class="container userprofile-header-content-mobile hidden-xl-up hidden-xs-down">
         <div class="row justify-content-center" style="width: 100vw">
-            <div class="col-sm-2">
+            <div class="col-sm-2" align="center">
                 <img src="{{ asset('profile-pics/'. $users->logo) }}" alt="logo" style="width: 128px; border-radius: 50%">
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2" align="center">
                 <img src="{{ asset('site-img/mushroom.png') }}" alt="logo" style="width: 128px">
                 <p style="color: white">{{$users->points}} shrooms</p>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2" align="center">
                 @if($users->admin == 1)
                     <img src="{{ asset('site-img/admin.png') }}" alt="logo" style="width: 128px">
                 @elseif($users->cesmember == 1)
