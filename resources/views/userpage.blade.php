@@ -15,7 +15,7 @@
 @endsection
 
 @section('title-page')
-   {{$users->name}}
+   Profil
 @endsection
 
 @section('content')
@@ -89,6 +89,12 @@
         @endphp
         <div class="progress" style="height: 100%; background: none">
             <div class="progress-bar" role="progressbar" aria-valuenow="{{$percent}}" aria-valuemin="0" aria-valuemax="{{$first->points}}" style="height: 100%; background-color: #1a1a1a"></div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-12" align="center">
+            <h2>{{$users->name}}</h2>
         </div>
     </div>
     <br>
