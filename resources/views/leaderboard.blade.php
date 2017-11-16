@@ -55,7 +55,7 @@
                             </td>
                         </tr>
                         @else
-                        <tr onclick="window.location.href = '{{ route('user', ['n' => $user->id]) }}';">
+                        <tr onclick="window.location.href = '{{ route('user', ['n' => $user->id]) }}';" style="cursor: pointer">
                             <th align="center">{{$loop->iteration}}</th>
                             <td style="position: relative; padding-top: 34px" align="center">
                                 <img src="{{'profile-pics/'. $user->logo}}" class="compte-profile-pp first-crown" alt="logo" style="width: 64px; height: 64px">
@@ -71,7 +71,7 @@
                         </tr>
                         @endif
                 @elseif( isset(Auth::user()->id) AND $user->id == Auth::user()->id)
-                    <tr class="table-active" onclick="window.location.href = '{{ route('user', ['n' => $user->id]) }}';">
+                    <tr class="table-active" onclick="window.location.href = '{{ route('user', ['n' => $user->id]) }}';" style="cursor: pointer">
                         <th align="center">{{$loop->iteration}}</th>
                         <td align="center"><img src="{{'profile-pics/'. $user->logo}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
                         <td>{{$user->name}}</td>
@@ -84,7 +84,7 @@
                     </tr>
                 @else
                     @if($loop->iteration > 10)
-                        <tr onclick="window.location.href = '{{ route('user', ['n' => $user->id]) }}';">
+                        <tr onclick="window.location.href = '{{ route('user', ['n' => $user->id]) }}';" style="cursor: pointer">
                             <th align="center">{{$loop->iteration}}</th>
                             <td align="center"><img src="{{'profile-pics/'. $user->logo}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
                             <td>{{$user->name}}</td>
@@ -96,7 +96,7 @@
                             </td>
                         </tr>
                     @else
-                        <tr onclick="window.location.href = '{{ route('user', ['n' => $user->id]) }}';">
+                        <tr onclick="window.location.href = '{{ route('user', ['n' => $user->id]) }}';" style="cursor: pointer">
                             <th align="center">{{$loop->iteration}}</th>
                             <td align="center"><img src="{{'profile-pics/'. $user->logo}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
                             <td>{{$user->name}}</td>
@@ -115,7 +115,7 @@
                 @if($loop->iteration > 10 )
                     @if(isset(Auth::user()->id) AND $user->id == Auth::user()->id)
                         <tfoot>
-                            <tr class="table-active" onclick="window.location.href = '{{ route('user', ['n' => $user->id]) }}';">
+                            <tr class="table-active" onclick="window.location.href = '{{ route('user', ['n' => $user->id]) }}';" style="cursor: pointer">
                                 <th align="center">{{$loop->iteration}}</th>
                                 <td align="center"><img src="{{'profile-pics/'. $user->logo}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
                                 <td>{{$user->name}}</td>
