@@ -115,7 +115,7 @@
                 @if($loop->iteration > 10 )
                     @if(isset(Auth::user()->id) AND $user->id == Auth::user()->id)
                         <tfoot>
-                            <tr class="table-active">
+                            <tr class="table-active" data-href="{{ route('user', ['n' => $user->id]) }}">
                                 <th align="center">{{$loop->iteration}}</th>
                                 <td align="center"><img src="{{'profile-pics/'. $user->logo}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
                                 <td>{{$user->name}}</td>
