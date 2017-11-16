@@ -198,8 +198,13 @@
     <div class="row" style="height: 100%;">
         <div class="col-sm-2"></div>
         <div class="col-sm-8 content-hp-container">
-            <div class="title">Inscrit toi pour ne pas rater de tournois !</div>
-            <a role="button" class="btn btn-custo" href="{{ route('register') }}">S'INSCRIRE</a>
+            @guest
+                <div class="title">Inscris toi pour ne pas rater de tournois !</div>
+                <a role="button" class="btn btn-custo" href="{{ route('register') }}">S'INSCRIRE</a>
+                @else
+                <div class="title">Passe voir les prochains events !</div>
+                <a role="button" class="btn btn-custo" href="{{ route('events') }}">EVENT</a>
+            @endguest
         </div>
     </div>
 </div>
