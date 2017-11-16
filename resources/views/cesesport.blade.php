@@ -250,7 +250,7 @@
     <div class="container content-assos">
         <div class="row">
             <div class="col-sm-12 assos-about">
-                <h1>Présentation de l'association</h1>
+                <h1>Présentation de l'assossiation</h1>
                 <p>Nous sommes une branche du BDE du CESI EXIA, une école d'ingénieur en informatique localisée à Mont Saint Aignan.
                     Notre équipe est composée de plusieurs étudiants de deuxième année passionnés de jeu vidéo. L'objet de notre association est d'organiser des
                     événements autour de l'esport. Si vous voulez être tenu au courant des news concernant notre association, n'hésitez pas à "LIKE NOTRE PAGE FB" et "TWITTER".</p>
