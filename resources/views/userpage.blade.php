@@ -71,7 +71,7 @@
                     @if($users->accept == 1)
                         <img src="{{ asset('site-img/Logo.png') }}" alt="logo" style="width: 128px">
                     @else
-                        <img src="{{ asset('site-img/logo-groupeCesi.png') }}" alt="logo" style="width: 128px">
+                        <img src="{{ asset('site-img/nouveau-logo-cesi2.jpg') }}" alt="logo" style="width: 128px; border-radius: 50%;">
                     @endif
                 @else
                     <img src="{{ asset('site-img/Logo.png') }}" alt="logo" style="width: 128px">
