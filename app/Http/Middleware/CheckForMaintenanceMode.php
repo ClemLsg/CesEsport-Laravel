@@ -45,7 +45,7 @@ class CheckForMaintenanceMode
             $value = Crypt::decrypt($cookie);
 
             if($value != '<random string>') {
-                return response('Be right back!', 503);
+                return response('Juste une petite maintenance de rien du tout de retour soon !', 503);
             }
         }
 
