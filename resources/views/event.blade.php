@@ -240,9 +240,15 @@ $count = 0;
                                     </div>
                                 @else
                                     @if($eventparticipe == false)
-                                        <div class="col-sm-8 offset-sm-2" style="padding: 0">
-                                            <button class="btn btn-success" style="width: 100%; border-top-left-radius: 0; border-top-right-radius: 0; color: #1a1a1a" data-toggle="modal" data-target="#{{$event->id}}Modal"><i class="fa fa-sign-in" aria-hidden="true"></i> S'inscrire</button>
-                                        </div>
+                                        @if($player == $event->players)
+                                                <div class="col-sm-10 offset-sm-1" style="padding: 0">
+                                                    <a class="btn btn-danger" style="width: 100%; border-top-left-radius: 0; border-top-right-radius: 0; color: #1a1a1a" >Mince l'event est complet !</a>
+                                                </div>
+                                            @else
+                                                <div class="col-sm-8 offset-sm-2" style="padding: 0">
+                                                    <button class="btn btn-success" style="width: 100%; border-top-left-radius: 0; border-top-right-radius: 0; color: #1a1a1a" data-toggle="modal" data-target="#{{$event->id}}Modal"><i class="fa fa-sign-in" aria-hidden="true"></i> S'inscrire</button>
+                                                </div>
+                                            @endif
                                     @else
                                         <div class="col-sm-10 offset-sm-1" style="padding: 0">
                                             <a class="btn btn-danger" href="{{ route('compte', ['n' => Auth::user()->id]) }}" style="width: 100%; border-top-left-radius: 0; border-top-right-radius: 0; color: #1a1a1a" >Tu es déja inscrit a cet event</a>
@@ -273,7 +279,7 @@ $count = 0;
                     </div>
                     <div class="modal-body">
                         <h6>Selectionnez les jeux auquels participer :</h6>
-                        <form class="form" method="POST" enctype="multipart/form-data" action="/CesEsport/event/solo/{{$event->id}}">
+                        <form class="form" method="POST" enctype="multipart/form-data" action="/event/solo/{{$event->id}}">
                             {{ csrf_field() }}
                                 @foreach($event->games as $game)
                                     <?php
