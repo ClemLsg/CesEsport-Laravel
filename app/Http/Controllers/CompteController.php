@@ -69,7 +69,7 @@ class CompteController extends Controller
         if ($users == null){
             return abort(404);
         }
-        return view('compte',  compact('users','solos','eventparticipesolo','eventparticipeteam', 'events', 'games','gameuser', 'gamelist', 'cesiteam', 'plateforme', 'plateformes', 'gamelistuser', 'plateformelistuser'))->with('numero', Auth::user()->id);
+        return view('compte',  compact('users','solos','eventparticipesolo','eventparticipeteam', 'events', 'games','gameuser', 'gamelist', 'cesiteam', 'plateforme', 'plateformes', 'gamelistuser', 'plateformelistuser'))->with('numero', $n);
 
     }
 
