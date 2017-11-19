@@ -287,10 +287,10 @@ class CompteController extends Controller
         return redirect()->route('compte',['n' => $n]);
     }
 
-    public function editevent($n, $e)
+    public function editevent($e)
     {
-        $user = User::findOrFail($n);
+        $user = User::findOrFail(Auth::user()->id);
         $event = Event::findOrFail($e);
-        return view('edit-event', compact('user','event'))->with('numero', $e, $n);
+        return view('edit-event', compact('user','event'))->with('numero', $e);
     }
 }

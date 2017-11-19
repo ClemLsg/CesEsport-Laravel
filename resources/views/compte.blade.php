@@ -335,7 +335,7 @@
                                                             @endforeach
                                                         </div>
                                                         <br>
-                                                        <a class="btn btn-info" style="color: #1a1a1a" href="{{route('edit-event', ['n' => Auth::user()->id, 'e'=>  $solo->id])}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Modifier mon inscription</a>
+                                                        <a class="btn btn-info" style="color: #1a1a1a" href="{{route('edit-event', ['e'=>  $solo->id])}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Modifier mon inscription</a>
                                                     </div>
                                                 </div>
                                             </div>
