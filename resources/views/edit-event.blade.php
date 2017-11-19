@@ -31,7 +31,7 @@
                         <td>{{$game->name}}</td>
                         @foreach($gameevnet as $participe)
                             @php
-                            echo "bruh"
+                            dd($participe);
                             @endphp
                             <td>
                                 @if($participe->soloing->game_id == $game->id)
