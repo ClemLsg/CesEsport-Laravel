@@ -7,19 +7,21 @@
  */
 ?>
 @php
-        $name = $users->name;
-        $logo = $users->logo;
-        $bio = $users->bio;
-        $pts = $users->points;
-        $mail = $users->email;
-        $steam = $users->steam;
-        $battle = $users->battlenet;
-        $lol = $users->lol;
-        $admin = $users->admin;
+    use CesEsport\Game;
+    
+            $name = $users->name;
+            $logo = $users->logo;
+            $bio = $users->bio;
+            $pts = $users->points;
+            $mail = $users->email;
+            $steam = $users->steam;
+            $battle = $users->battlenet;
+            $lol = $users->lol;
+            $admin = $users->admin;
 
-$path = 'profile-pics/' . $logo;
+    $path = 'profile-pics/' . $logo;
 
-$preve = 0;
+    $preve = 0;
 
 @endphp
 
