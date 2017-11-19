@@ -17,4 +17,11 @@
 @endsection
 
 @section('content')
+<div class="container">
+    <table class="table">
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
 @endsection
