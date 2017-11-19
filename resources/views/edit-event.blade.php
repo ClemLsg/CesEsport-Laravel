@@ -21,12 +21,16 @@
     <table class="table">
         <tbody>
             @foreach($games as $game)
-                <td style="width: 32px">
-                </td>
-                <td style="width: 32px">
-                    <img src="{{ asset('games-logo/'. $game->logo) }}" alt="logo" style="width: 64px">
-                </td>
-                <td>{{$game->name}}</td>
+                @if($game->name != 'Aucun')
+                    <tr>
+                        <td style="width: 32px">
+                        </td>
+                        <td style="width: 32px">
+                            <img src="{{ asset('games-logo/'. $game->logo) }}" alt="logo" style="width: 64px">
+                        </td>
+                        <td>{{$game->name}}</td>
+                    </tr>
+                @endif
             @endforeach
         </tbody>
     </table>
