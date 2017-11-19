@@ -13,7 +13,7 @@ class Event extends Model
 
     public function solos()
     {
-        return $this->belongsToMany('CesEsport\User', 'solo')->withPivot('game_id');
+        return $this->belongsToMany('CesEsport\User', 'solo')->as('soloing')->withPivot('game_id');
     }
 
     public function games()

@@ -40,7 +40,7 @@ class User extends Authenticatable
 
     public function solos()
     {
-        return $this->belongsToMany('CesEsport\Event', 'solo')->withPivot('game_id');
+        return $this->belongsToMany('CesEsport\Event', 'solo')->as('soloing')->withPivot('game_id');
     }
 
     public function jeux()
