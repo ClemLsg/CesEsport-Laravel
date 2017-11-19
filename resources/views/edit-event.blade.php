@@ -30,8 +30,11 @@
                         </td>
                         <td>{{$game->name}}</td>
                         @foreach($gameevnet as $participe)
+                            @php
+                            echo "bruh"
+                            @endphp
                             <td>
-                                @if($participe->soloing->game_id != $game->id)
+                                @if($participe->soloing->game_id == $game->id)
                                     <a class="btn btn-success" style="margin-left: 10px; color: #1a1a1a" >S'inscrire <i class="fa fa-check" aria-hidden="true"></i></a>
                                 @else
                                     <a class="btn btn-danger" style="margin-left: 10px; color: #1a1a1a">Se desinscrire <i class="fa fa-close" aria-hidden="true"></i></a>
