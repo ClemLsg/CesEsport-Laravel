@@ -292,6 +292,7 @@ class CompteController extends Controller
         $user = User::findOrFail(Auth::user()->id);
         $event = Event::findOrFail($e);
         $gameevnet = $user->solos;
+        dd($gameevnet);
         $games = $event->games;
         return view('edit-event', compact('user','event', 'games', 'gameevnet'))->with('numero', $e);
     }
