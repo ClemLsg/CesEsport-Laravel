@@ -286,4 +286,11 @@ class CompteController extends Controller
         $user->update($request->all());
         return redirect()->route('compte',['n' => $n]);
     }
+
+    public function editevent($n, $e)
+    {
+        $user = User::findOrFail($n);
+        $event = Event::findOrFail($e);
+        return view('edit-event', compact('user','event'))->with('numero', $e);
+    }
 }

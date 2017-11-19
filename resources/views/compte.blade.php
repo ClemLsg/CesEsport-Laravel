@@ -8,7 +8,7 @@
 ?>
 @php
     use CesEsport\Game;
-    
+
             $name = $users->name;
             $logo = $users->logo;
             $bio = $users->bio;
@@ -335,7 +335,7 @@
                                                             @endforeach
                                                         </div>
                                                         <br>
-                                                        <button class="btn btn-info" style="color: #1a1a1a" data-toggle="modal" data-target="#{{$solo->id}}Modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Modifier mon inscription</button>
+                                                        <a class="btn btn-info" style="color: #1a1a1a" href="{{route('edit-event', ['n' => Auth::user()->id, 'e'=>  $solo->id])}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Modifier mon inscription</a>
                                                     </div>
                                                 </div>
                                             </div>
