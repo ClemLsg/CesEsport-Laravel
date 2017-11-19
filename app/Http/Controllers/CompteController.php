@@ -291,6 +291,6 @@ class CompteController extends Controller
     {
         $user = User::findOrFail($n);
         $event = Event::findOrFail($e);
-        return view('edit-event', compact('user','event'))->with('numero', $e);
+        return view('edit-event', compact('user','event'))->with('numero', $e, $n);
     }
 }
