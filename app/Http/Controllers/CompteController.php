@@ -295,4 +295,15 @@ class CompteController extends Controller
         $games = $event->games;
         return view('edit-event', compact('user','event', 'games', 'gameevnet'))->with('numero', $e);
     }
+
+    public function unsubevent($e, $g)
+    {
+        $user = User::findOrFail(Auth::user()->id);
+        DB::table('solo')->where([
+            ['user_id', '=', $user->id],
+            ['event_id', '=', $e],
+            ['game_id', '=', $g],
+            ])->delete();
+        return redirect()->route('compte',['n' => Auth::user()->id]);
+    }
 }
