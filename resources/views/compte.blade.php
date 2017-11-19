@@ -7,7 +7,6 @@
  */
 ?>
 @php
-    use App\Game;
         $name = $users->name;
         $logo = $users->logo;
         $bio = $users->bio;
