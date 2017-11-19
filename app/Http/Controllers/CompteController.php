@@ -306,4 +306,11 @@ class CompteController extends Controller
             ])->delete();
         return redirect()->route('compte',['n' => Auth::user()->id]);
     }
+
+    public function subevent($e, $g)
+    {
+        $user = User::findOrFail(Auth::user()->id);
+        $user->solos()->attach($e, ['game_id' => $g]);
+        return redirect()->route('compte',['n' => Auth::user()->id]);
+    }
 }
