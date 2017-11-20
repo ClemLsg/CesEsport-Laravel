@@ -111,7 +111,7 @@ $count = 0;
                                 </div>
                             @else
                                 @if($eventparticipe == false)
-                                    @if($player == $event->players)
+                                    @if($players == $event->players)
                                         <div class="col-sm-10 offset-sm-1" style="padding: 0">
                                             <a class="btn btn-danger" style="width: 100%; border-top-left-radius: 0; border-top-right-radius: 0; color: #1a1a1a" >Mince l'event est complet !</a>
                                         </div>
@@ -182,7 +182,7 @@ $count = 0;
                                     </div>
                                 @else
                                     @if($eventparticipe == false)
-                                        @if($player == $event->players)
+                                        @if($players == $event->players)
                                             <div class="col-sm-10 offset-sm-1" style="padding: 0">
                                                 <a class="btn btn-danger" style="width: 100%; border-top-left-radius: 0; border-top-right-radius: 0; color: #1a1a1a" >Mince l'event est complet !</a>
                                             </div>
@@ -252,7 +252,7 @@ $count = 0;
                                     </div>
                                 @else
                                     @if($eventparticipe == false)
-                                        @if($player == $event->players)
+                                        @if($players == $event->players)
                                                 <div class="col-sm-10 offset-sm-1" style="padding: 0">
                                                     <a class="btn btn-danger" style="width: 100%; border-top-left-radius: 0; border-top-right-radius: 0; color: #1a1a1a" >Mince l'event est complet !</a>
                                                 </div>
