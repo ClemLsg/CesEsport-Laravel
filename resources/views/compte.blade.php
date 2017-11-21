@@ -73,6 +73,9 @@
                     @endif
                     <a role="button" class="btn btn-custo-inverted" href="{{ route('user', ['n' => Auth::user()->id]) }}">VOIR MON PROFIL</a>
                 </h1>
+                @if($admin == 1)
+                    <a role="button" class="btn btn-custo-inverted" href="{{ route('admin') }}">PANEL ADMIN</a>
+                @endif
                 <div class="row" id="email-compte">
                     <div class="col-sm-8">
                         <h2>{{$mail}}</h2>

@@ -42,3 +42,5 @@ Route::get('/team-inscription-team/{n}', 'CesEsportTeamController@register')->na
 Route::get('/team-desinscription/{n}', 'CesEsportTeamController@unregister')->name('unsub-cesi');
 
 Route::get('404',['as'=>'404','uses'=>'ErrorHandlerController@errorCode404'])->name('404');
+
+Route::get('/admin', 'AdminController@index')->name('admin');
