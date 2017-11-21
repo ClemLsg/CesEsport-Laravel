@@ -71,8 +71,8 @@ $count = 0;
                                     <p class="event-title">{{$event->name}}</p>
                                 </div>
                             </div>
-                            <div class="progress-title" onclick="window.location.href = '{{ route('event-list', ['e' => $event->id]) }}';" style="cursor: pointer">
-                                <p>{{$players}} / {{$event->players}} Joueurs</p>
+                            <div class="progress-title">
+                                <p onclick="window.location.href = '{{ route('event-list', ['e' => $event->id]) }}';" style="cursor: pointer">{{$players}} / {{$event->players}} Joueurs</p>
                             </div>
                             <div class="progress event-head-progress">
                                 <div class="progress-bar event-head-progressbar" role="progressbar" aria-valuenow="{{$totalplayers}}" aria-valuemin="0" aria-valuemax="{{$event->players}}" style="width: {{$totalplayers}}%"></div>
