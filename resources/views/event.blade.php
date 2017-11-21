@@ -71,7 +71,7 @@ $count = 0;
                                     <p class="event-title">{{$event->name}}</p>
                                 </div>
                             </div>
-                            <div class="progress-title">
+                            <div class="progress-title" onclick="window.location.href = '{{ route('event-list', ['e' => $event->id]) }}';" style="cursor: pointer">
                                 <p>{{$players}} / {{$event->players}} Joueurs</p>
                             </div>
                             <div class="progress event-head-progress">

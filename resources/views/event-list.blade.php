@@ -30,7 +30,7 @@
             </thead>
             <tbody>
             @foreach($list as $user)
-                <tr>
+                <tr onclick="window.location.href = '{{ route('user', ['n' => $user->id]) }}';" style="cursor: pointer">
                     <td>{{$user->id}}</td>
                     <td align="center"><img src="{{asset('profile-pics/'. $user->logo)}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
                     <td>{{$user->name}}</td>
