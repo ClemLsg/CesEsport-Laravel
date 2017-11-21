@@ -10,11 +10,11 @@
 @extends('layouts.template')
 
 @section('title')
-    Compte
+    Admin
 @endsection
 
 @section('title-page')
-    Compte de {{$name}}
+    Panel Admin
 @endsection
 
 @section('content')
