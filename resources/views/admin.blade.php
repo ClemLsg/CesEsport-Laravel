@@ -28,18 +28,22 @@
                     <div class="menu-list">
                         <ul id="menu-content" class="menu-content collapse out">
                             <div class="row">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-dashboard fa-lg"></i> Dashboard
-                                    </a>
-                                </li>
+                                <div class="col-sm-12" align="center">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                                        </a>
+                                    </li>
+                                </div>
                             </div>
                             <div class="row">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-dashboard fa-lg"></i> Dashboard
-                                    </a>
-                                </li>
+                                <div class="col-sm-12" align="center">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                                        </a>
+                                    </li>
+                                </div>
                             </div>
                         </ul>
                     </div>
