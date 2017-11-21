@@ -18,6 +18,7 @@
 @endsection
 
 @section('content')
+    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
