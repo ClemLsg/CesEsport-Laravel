@@ -59,7 +59,7 @@ class EventController extends Controller
     public function list($e)
     {
         $event = Event::find($e);
-        $list = $event->solo;
+        $list = $event->solos;
         return view('event-list',  compact('event','list'));
     }
 }
