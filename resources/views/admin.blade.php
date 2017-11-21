@@ -21,7 +21,7 @@
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
     <div class="container">
         <div class="row">
-            <div class="col-sm-2">
+            <div class="col-sm-4">
                 <div class="nav-side-menu">
                     <div class="brand">Brand Logo</div>
                     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
