@@ -252,8 +252,10 @@
                                     <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name="jeu{{$loop->iteration}}">
                                         @foreach($games as $game)
                                             @if($game->id != $gamelistuser[0] AND $game->id != $gamelistuser[1] AND $game->id != $gamelistuser[2])
-                                                @if($game->id != 28 OR $game->id != 3)
-                                                    <option value="{{$game->id}}" selected>{{$game->name}}</option>
+                                                @if($game->id != 28)
+                                                    @if($game->id != 3)
+                                                        <option value="{{$game->id}}" selected>{{$game->name}}</option>
+                                                    @endif
                                                 @endif
                                             @endif
                                         @endforeach
