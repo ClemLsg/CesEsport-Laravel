@@ -34,10 +34,10 @@
             </li>
         </ul>
         <div class="tab-content">
-            <div class="tab-pane active" id="home" role="tabpanel">RTes</div>
-            <div class="tab-pane" id="profile" role="tabpanel">Tes1</div>
-            <div class="tab-pane" id="messages" role="tabpanel">tes2</div>
-            <div class="tab-pane" id="settings" role="tabpanel">Troi</div>
+            <div class="tab-pane fade active" id="home" role="tabpanel">RTes</div>
+            <div class="tab-pane fade" id="profile" role="tabpanel">Tes1</div>
+            <div class="tab-pane fade" id="messages" role="tabpanel">tes2</div>
+            <div class="tab-pane fade" id="settings" role="tabpanel">Troi</div>
         </div>
     </div>
 @endsection
