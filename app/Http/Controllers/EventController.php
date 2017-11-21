@@ -55,4 +55,11 @@ class EventController extends Controller
 
         return redirect()->route('compte', ['n' => Auth::user()->id]);
     }
+
+    public function list($e)
+    {
+        $event = Event::find($e);
+        $list = $event->solo;
+        return view('event-list',  compact('event','list'));
+    }
 }

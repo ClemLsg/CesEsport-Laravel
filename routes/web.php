@@ -22,6 +22,7 @@ Route::get('/contact', 'ContactController@index')->name('contact');
 Route::get('/users/{n}', 'UserPageController@index')->name('user');
 
 Route::get('/event', 'EventController@index')->name('event');
+Route::get('/event-users/{e}', 'EventController@list')->name('event-list');
 Route::post('/event/solo/{n}', 'EventController@register_solo');
 
 Route::get('/leaderboard', 'LeaderboardController@index')->name('leaderboard');
