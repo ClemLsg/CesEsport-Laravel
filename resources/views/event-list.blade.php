@@ -32,7 +32,7 @@
             @foreach($list as $user)
                 <tr>
                     <td>{{$user->id}}</td>
-                    <td align="center"><img src="{{'profile-pics/'. $user->logo}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
+                    <td align="center"><img src="{{asset('profile-pics/'. $user->logo)}}" class="compte-profile-pp" alt="logo" style="width: 48px; height: 48px"></td>
                     <td>{{$user->name}}</td>
                     <td>{{$user->points}}</td>
                 </tr>
