@@ -44,3 +44,5 @@ Route::get('/team-desinscription/{n}', 'CesEsportTeamController@unregister')->na
 Route::get('404',['as'=>'404','uses'=>'ErrorHandlerController@errorCode404'])->name('404');
 
 Route::get('/admin', 'AdminController@index')->name('admin');
+Route::post('/admin/addpts', 'AdminController@addpts')->name('addptns');
+Route::post('/admin/rmpts', 'AdminController@rmpts')->name('rmptns');
