@@ -66,13 +66,13 @@ $count = 0;
                         </div>
                         <div class="row event-card">
                             <div class="event-head-bg" style="background-image: url('{{ asset('event-banner/default-event-banner.png') }}');"></div>
-                            <div class="row event-head">
+                            <div class="row event-head" onclick="window.location.href = '{{ route('event-list', ['e' => $event->id]) }}';" style="cursor: pointer">
                                 <div class="col-sm-12">
                                     <p class="event-title">{{$event->name}}</p>
                                 </div>
                             </div>
                             <div class="progress-title">
-                                <p onclick="window.location.href = '{{ route('event-list', ['e' => $event->id]) }}';" style="cursor: pointer">{{$players}} / {{$event->players}} Joueurs</p>
+                                <p>{{$players}} / {{$event->players}} Joueurs</p>
                             </div>
                             <div class="progress event-head-progress">
                                 <div class="progress-bar event-head-progressbar" role="progressbar" aria-valuenow="{{$totalplayers}}" aria-valuemin="0" aria-valuemax="{{$event->players}}" style="width: {{$totalplayers}}%"></div>
