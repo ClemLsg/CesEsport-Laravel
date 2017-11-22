@@ -5,6 +5,7 @@ namespace CesEsport\Http\Controllers;
 use CesEsport\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
@@ -21,13 +22,14 @@ class AdminController extends Controller
         if ($request->filled('pseudo')){
             $u = $request->input('pseudo');
             $user = User::where('name', $u)->first();
-            dd($user);
             $ptsnow = $user->points;
         }
         if ($request->filled('points')){
             $ptsadd = $request->input('points');
             $ptns = $ptsnow + $ptsadd;
-            $user->update(array('points' => $ptns));
+            DB::table('users')
+                ->where('name', $u)
+                ->update(['points' => $ptns]);
             return redirect()->route('admin');
         }
     }
@@ -42,7 +44,9 @@ class AdminController extends Controller
         if ($request->filled('points')){
             $ptsadd = $request->input('points');
             $ptns = $ptsnow + $ptsadd;
-            $user->update(array('points' => $ptns));
+            DB::table('users')
+                ->where('name', $u)
+                ->update(['points' => $ptns]);
             return redirect()->route('admin');
         }
     }
