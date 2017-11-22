@@ -20,7 +20,7 @@ class AdminController extends Controller
     {
         if ($request->filled('pseudo')){
             $u = $request->input('pseudo');
-            $user = User::where('name', $u);
+            $user = User::where('name', $u)->first();
             $ptsnow = $user->points;
         }
         if ($request->filled('points')){
@@ -35,7 +35,7 @@ class AdminController extends Controller
     {
         if ($request->filled('pseudo')){
             $u = $request->input('pseudo');
-            $user = User::where('name', $u);
+            $user = User::where('name', $u)->first();
             $ptsnow = $user->points;
         }
         if ($request->filled('points')){
