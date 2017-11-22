@@ -57,10 +57,10 @@
                             <form class="form-inline" method="POST" enctype="multipart/form-data" action="/admin/rmpts">
                                 {{ csrf_field() }}
                                 <label class="sr-only" for="inlineFormInput">Pseudo</label>
-                                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="searchname2" placeholder="Pseudo">
+                                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="searchname2" name="pseudo" placeholder="Pseudo">
 
                                 <label class="sr-only" for="inlineFormInput">Points</label>
-                                <input type="number" class="form-control mb-2 mr-sm-2 mb-sm-0" id="points" name="quantity" placeholder="Points">
+                                <input type="number" class="form-control mb-2 mr-sm-2 mb-sm-0" id="points" name="points" placeholder="Points">
 
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
