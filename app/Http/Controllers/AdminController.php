@@ -43,7 +43,7 @@ class AdminController extends Controller
         }
         if ($request->filled('points')){
             $ptsadd = $request->input('points');
-            $ptns = $ptsnow + $ptsadd;
+            $ptns = $ptsnow - $ptsadd;
             DB::table('users')
                 ->where('name', $u)
                 ->update(['points' => $ptns]);
