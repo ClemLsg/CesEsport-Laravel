@@ -21,6 +21,7 @@ class AdminController extends Controller
         if ($request->filled('pseudo')){
             $u = $request->input('pseudo');
             $user = User::where('name', $u)->first();
+            dd($user);
             $ptsnow = $user->points;
         }
         if ($request->filled('points')){
