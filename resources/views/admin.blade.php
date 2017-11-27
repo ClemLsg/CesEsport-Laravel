@@ -70,6 +70,12 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel">
+
+            </div>
+            <div class="tab-pane fade" id="messages" role="tabpanel">
+
+            </div>
+            <div class="tab-pane fade" id="settings" role="tabpanel">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -88,12 +94,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="messages" role="tabpanel">
-
-            </div>
-            <div class="tab-pane fade" id="settings" role="tabpanel">
-
             </div>
         </div>
     </div>
