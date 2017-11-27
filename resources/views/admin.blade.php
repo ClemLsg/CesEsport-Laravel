@@ -30,7 +30,7 @@
                 <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Badges add</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#settings" role="tab">A determiner</a>
+                <a class="nav-link" data-toggle="tab" href="#settings" role="tab">Jeu Add</a>
             </li>
         </ul>
         <div class="tab-content">
@@ -38,6 +38,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
+                            <br>
                             <h3>Add points</h3>
                             <form class="form-inline" method="POST" enctype="multipart/form-data" action="/admin/addpts">
                                 {{ csrf_field() }}
@@ -69,7 +70,24 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel">
-
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <br>
+                            <h3>Add Jeu</h3>
+                            <form class="form-inline" method="POST" enctype="multipart/form-data" action="/admin/addgame">
+                                {{ csrf_field() }}
+                                <label class="sr-only" for="inlineFormInput">Nom</label>
+                                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="name" placeholder="Name">
+                                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="filename" placeholder="FileName">
+                                <div class="form-group">
+                                    <input type="file" class="form-control-file" id="gamelogo" aria-describedby="fileHelp" name="gamelogo">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="tab-pane fade" id="messages" role="tabpanel">
 

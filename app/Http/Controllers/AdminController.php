@@ -2,6 +2,7 @@
 
 namespace CesEsport\Http\Controllers;
 
+use CesEsport\Game;
 use CesEsport\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -50,4 +51,22 @@ class AdminController extends Controller
             return redirect()->route('admin');
         }
     }
+
+    public function addgame(Request $request)
+    {
+        if($request->hasFile('gamelogo')){
+            $avatar = $request->file('gamelogo');
+            $name = $request->file('name');
+            $filenamer = $request->file('filename');
+            $filename = $filenamer . '.' . $avatar->getClientOriginalExtension();
+            Image::make($avatar)->save(public_path('/games-logo/' . $filename));
+            Game::create([
+                'name' => $name,
+                'logo' => $filename,
+            ]);
+
+            return redirect()->route('admin');
+        }
+    }
+
 }
