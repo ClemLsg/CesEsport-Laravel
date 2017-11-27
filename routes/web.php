@@ -46,3 +46,4 @@ Route::get('404',['as'=>'404','uses'=>'ErrorHandlerController@errorCode404'])->n
 Route::get('/admin', 'AdminController@index')->name('admin');
 Route::post('/admin/addpts', 'AdminController@addpts')->name('addptns');
 Route::post('/admin/rmpts', 'AdminController@rmpts')->name('rmptns');
+Route::post('/admin/addgame', 'AdminController@addgame')->name('addgame');

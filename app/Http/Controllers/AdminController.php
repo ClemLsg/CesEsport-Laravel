@@ -63,6 +63,7 @@ class AdminController extends Controller
             Game::create([
                 'name' => $name,
                 'logo' => $filename,
+                'team' => 0,
             ]);
 
             return redirect()->route('admin');
