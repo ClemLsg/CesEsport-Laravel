@@ -157,7 +157,7 @@
                 <div class="card-block">
                     <div class="row">
                         @if(!isset($users->badge))
-                            <p>Ce joueur n'as pas de Badges</p>
+                            <p>Ce joueur n'a pas de Badges</p>
                         @else
                         @foreach($users->badge as $badge)
                             <div class="col-sm-4">
