@@ -8,6 +8,7 @@ class Game extends Model
 {
 
     protected $fillable = ['name'];
+    public $timestamps = false;
 
     public function games()
     {
