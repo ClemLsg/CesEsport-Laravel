@@ -63,7 +63,7 @@ class AdminController extends Controller
             Image::make($avatar)->save(public_path('/games-logo/' . $filename));
             Game::create([
                 'name' => $name,
-                'logo' => $filename,
+                'logo' => $filenamer,
                 'team' => 0,
             ]);
 
