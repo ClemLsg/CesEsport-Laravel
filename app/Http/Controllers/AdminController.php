@@ -57,8 +57,8 @@ class AdminController extends Controller
     {
         if($request->hasFile('gamelogo')){
             $avatar = $request->file('gamelogo');
-            $name = $request->file('name');
-            $filenamer = $request->file('filename');
+            $name = $request->input('name');
+            $filenamer = $request->input('filename');
             $filename = $filenamer . '.' . $avatar->getClientOriginalExtension();
             Image::make($avatar)->save(public_path('/games-logo/' . $filename));
             Game::create([
