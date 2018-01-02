@@ -83,8 +83,8 @@ class AdminController extends Controller
             Image::make($avatar)->save(public_path('/badges-logo/' . $filename));
             Badge::create([
                 'name' => $name,
-                'desc' => $desc,
                 'logo' => $filenamer,
+                'desc' => $desc,
             ]);
 
             return redirect()->route('admin');

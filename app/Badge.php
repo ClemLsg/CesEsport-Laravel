@@ -8,9 +8,11 @@ class Badge extends Model
 {
     protected $fillable = [
         'name',
-        'desc'
+        'desc',
+        'logo',
     ];
     public $timestamps = false;
+
     public function users()
     {
         return $this->belongsToMany('CesEsport\User')->as('user');
