@@ -94,7 +94,7 @@ class AdminController extends Controller
 
     public function addevent(Request $request)
     {
-        if($request->hasFile('name')){
+        if($request->filled('name')){
             $name = $request->input('name');
             $desc = $request->input('desc');
             $points = $request->input('points');
