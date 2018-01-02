@@ -104,7 +104,7 @@ class AdminController extends Controller
             Event::create([
                 'name' => $name,
                 'desc' => $desc,
-                'points' => $points,
+                'ptsrewards' => $points,
                 'players' => $players,
                 'lieu' => $lieu,
                 'date' => $date,

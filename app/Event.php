@@ -10,12 +10,11 @@ class Event extends Model
     protected $fillable = [
         'name',
         'desc',
-        'points',
+        'ptsrewards',
         'players',
         'lieu',
         'date',
     ];
-    public $timestamps = false;
 
     public function teams()
     {
