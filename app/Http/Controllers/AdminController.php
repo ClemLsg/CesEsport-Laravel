@@ -2,6 +2,7 @@
 
 namespace CesEsport\Http\Controllers;
 
+use CesEsport\Badge;
 use CesEsport\Game;
 use CesEsport\User;
 use Illuminate\Http\Request;
@@ -65,6 +66,25 @@ class AdminController extends Controller
                 'name' => $name,
                 'logo' => $filenamer,
                 'team' => 0,
+            ]);
+
+            return redirect()->route('admin');
+        }
+    }
+
+    public function crtbg(Request $request)
+    {
+        if($request->hasFile('badgelogo')){
+            $avatar = $request->file('badgelogo');
+            $name = $request->input('name');
+            $desc = $request->input('desc');
+            $filenamer = $request->input('filename');
+            $filename = $filenamer . '.' . $avatar->getClientOriginalExtension();
+            Image::make($avatar)->save(public_path('/badges-logo/' . $filename));
+            Badge::create([
+                'name' => $name,
+                'desc' => $desc,
+                'logo' => $filenamer,
             ]);
 
             return redirect()->route('admin');

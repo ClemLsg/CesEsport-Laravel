@@ -73,7 +73,33 @@
 
             </div>
             <div class="tab-pane fade" id="messages" role="tabpanel">
-
+                <div class="container">
+                    <div class="row">
+                        <div class="sm-12">
+                            <h3>Create Badge</h3>
+                            <form class="form-inline" method="POST" enctype="multipart/form-data" action="/admin/crtbg">
+                                {{ csrf_field() }}
+                                <label class="sr-only" for="inlineFormInput">Nom</label>
+                                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="name" placeholder="Name">
+                                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="desc" placeholder="Descritpion">
+                                <div class="form-group">
+                                    <input type="file" class="form-control-file" id="badgelogo" aria-describedby="fileHelp" name="badgelogo">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="sm-12">
+                            <h3>Remove Badge</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="sm-12">
+                            <h3>Add Badge To User</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="tab-pane fade" id="settings" role="tabpanel">
                 <div class="container">
