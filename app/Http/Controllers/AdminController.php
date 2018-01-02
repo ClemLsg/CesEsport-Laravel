@@ -113,4 +113,16 @@ class AdminController extends Controller
         }
     }
 
+    public function autocomplete(Request $request)
+    {
+        $term=$request->term;
+        $data=Game::where('name', 'LIKE', '%'.$term.'%')
+            ->get();
+        $result=array();
+        foreach ($data as $key => $value){
+            $result[]=['id'=>$value->id,'value'=>$value->name];
+        }
+        return response()->json($result);
+    }
+
 }

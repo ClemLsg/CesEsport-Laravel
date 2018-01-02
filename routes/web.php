@@ -36,6 +36,7 @@ Route::get('/edit-event-desinscription/{e}/{p}', 'CompteController@unsubevent')-
 
 Route::get('/team-create/{p}/{n}', 'TeamCreateController@index')->name('team-create');
 Route::get('/team-create/autocomplete',array('as'=>'autocomplete','uses'=>'TeamCreateController@autocomplete'));
+Route::get('/admin/autocomplete',array('as'=>'game-autocomplete','uses'=>'AdminController@autocomplete'));
 
 Route::get('/team-inscription/{n}', 'CesEsportTeamController@index')->name('inscription-team');
 Route::get('/team-inscription-team/{n}', 'CesEsportTeamController@register')->name('sub-cesi');
