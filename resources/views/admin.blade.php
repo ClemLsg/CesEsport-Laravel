@@ -81,6 +81,7 @@
                                 {{ csrf_field() }}
                                 <label class="sr-only" for="inlineFormInput">Nom</label>
                                 <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="name" placeholder="Name">
+                                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="filename" placeholder="FileName">
                                 <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="desc" placeholder="Descritpion">
                                 <div class="form-group">
                                     <input type="file" class="form-control-file" id="badgelogo" aria-describedby="fileHelp" name="badgelogo">
