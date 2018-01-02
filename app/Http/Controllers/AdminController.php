@@ -112,14 +112,13 @@ class AdminController extends Controller
                 'lieu' => $lieu,
                 'date' => $date,
             ]);
-            $event = Event::where('name', $name)->get();
             $game1 = Game::where('name', $jeu1)->get();
             $game2 = Game::where('name', $jeu2)->get();
             $game3 = Game::where('name', $jeu3)->get();
 
-            $event->games()->attach($game1->id);
-            $event->games()->attach($game2->id);
-            $event->games()->attach($game3->id);
+            Event::where('name', $name)->games()->attach($game1->id);
+            Event::where('name', $name)->games()->attach($game2->id);
+            Event::where('name', $name)->games()->attach($game3->id);
             return redirect()->route('admin');
         }
     }
