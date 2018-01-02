@@ -48,3 +48,4 @@ Route::post('/admin/addpts', 'AdminController@addpts')->name('addptns');
 Route::post('/admin/rmpts', 'AdminController@rmpts')->name('rmptns');
 Route::post('/admin/addgame', 'AdminController@addgame')->name('addgame');
 Route::post('/admin/crtbg', 'AdminController@crtbg')->name('crtbg');
+Route::post('/admin/addevent', 'AdminController@addevent')->name('addevent');

@@ -69,9 +69,27 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel">
 
+            <div class="tab-pane fade" id="profile" role="tabpanel">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <br>
+                            <form class="form-inline" method="POST" enctype="multipart/form-data" action="/admin/addevent">
+                                {{ csrf_field() }}
+                                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="name" placeholder="Name">
+                                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="desc" placeholder="Descritpion">
+                                <input type="number" class="form-control mb-2 mr-sm-2 mb-sm-0" id="players" name="players" placeholder="Players">
+                                <input type="number" class="form-control mb-2 mr-sm-2 mb-sm-0" id="points" name="points" placeholder="Points">
+                                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="lieu" placeholder="Lieu">
+                                <input type="date" class="form-control mb-2 mr-sm-2 mb-sm-0" name="date" placeholder="date">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="tab-pane fade" id="messages" role="tabpanel">
                 <div class="container">
                     <div class="row">

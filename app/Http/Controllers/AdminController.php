@@ -3,6 +3,7 @@
 namespace CesEsport\Http\Controllers;
 
 use CesEsport\Badge;
+use CesEsport\Event;
 use CesEsport\Game;
 use CesEsport\User;
 use Illuminate\Http\Request;
@@ -87,6 +88,27 @@ class AdminController extends Controller
                 'desc' => $desc,
             ]);
 
+            return redirect()->route('admin');
+        }
+    }
+
+    public function addevent(Request $request)
+    {
+        if($request->hasFile('name')){
+            $name = $request->input('name');
+            $desc = $request->input('desc');
+            $points = $request->input('points');
+            $players = $request->input('players');
+            $lieu = $request->input('lieu');
+            $date = $request->input('date');
+            Event::create([
+                'name' => $name,
+                'desc' => $desc,
+                'points' => $points,
+                'players' => $players,
+                'lieu' => $lieu,
+                'date' => $date,
+            ]);
             return redirect()->route('admin');
         }
     }
