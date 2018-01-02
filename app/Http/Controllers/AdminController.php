@@ -117,9 +117,9 @@ class AdminController extends Controller
             $game2 = Game::where('name', $jeu2)->get();
             $game3 = Game::where('name', $jeu3)->get();
 
-            $event->joue()->attach($game1->id);
-            $event->joue()->attach($game2->id);
-            $event->joue()->attach($game3->id);
+            $event->games()->attach($game1->id);
+            $event->games()->attach($game2->id);
+            $event->games()->attach($game3->id);
             return redirect()->route('admin');
         }
     }
