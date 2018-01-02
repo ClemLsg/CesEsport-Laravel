@@ -101,6 +101,9 @@ class AdminController extends Controller
             $players = $request->input('players');
             $lieu = $request->input('lieu');
             $date = $request->input('date');
+            $jeu1 = $request->input('jeu1');
+            $jeu2 = $request->input('jeu2');
+            $jeu3 = $request->input('jeu3');
             Event::create([
                 'name' => $name,
                 'desc' => $desc,
@@ -109,6 +112,14 @@ class AdminController extends Controller
                 'lieu' => $lieu,
                 'date' => $date,
             ]);
+            $event = Event::where('name', $name)->get();
+            $game1 = Game::where('name', $jeu1)->get();
+            $game2 = Game::where('name', $jeu2)->get();
+            $game3 = Game::where('name', $jeu3)->get();
+
+            $event->roles()->attach($game1->id);
+            $event->roles()->attach($game2->id);
+            $event->roles()->attach($game3->id);
             return redirect()->route('admin');
         }
     }
