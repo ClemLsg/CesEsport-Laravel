@@ -82,10 +82,11 @@
                                 <input type="number" class="form-control mb-2 mr-sm-2 mb-sm-0" id="players" name="players" placeholder="Players">
                                 <input type="number" class="form-control mb-2 mr-sm-2 mb-sm-0" id="points" name="points" placeholder="Points">
                                 <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name="lieu" placeholder="Lieu">
-                                <input type="date" class="form-control mb-2 mr-sm-2 mb-sm-0" name="date" placeholder="date">*
+                                <input type="date" class="form-control mb-2 mr-sm-2 mb-sm-0" name="date" placeholder="date">
                                 <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="searchgame1" name="jeu1" placeholder="Premier jeu">
                                 <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="searchgame2" name="jeu2" placeholder="Deuxième jeu">
                                 <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="searchgame3" name="jeu3" placeholder="Troisième jeu">
+                                <small class="form-text text-muted">Completez tout les jeux svp si aucun autre jeu mettre 'Aucun' ;)</small>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
                         </div>
