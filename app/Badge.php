@@ -10,6 +10,7 @@ class Badge extends Model
         'name',
         'desc'
     ];
+    public $timestamps = false;
     public function users()
     {
         return $this->belongsToMany('CesEsport\User')->as('user');
