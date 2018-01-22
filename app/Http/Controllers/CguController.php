@@ -10,4 +10,13 @@ class CguController extends Controller
     {
         return view('cgu');
     }
+
+    public function validate(Request $request)
+    {
+        if($request->filled('validation')){
+            return redirect("https://www.eventbrite.fr/e/billets-cesesport-private-lan-2-42414316362");
+        } else {
+            return view('cgu');
+        }
+    }
 }

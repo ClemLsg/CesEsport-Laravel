@@ -62,12 +62,12 @@
                     {{ csrf_field() }}
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" value="" required>
-                            Je confirme avoir pris connaissance des conditions generale d'utilisation
+                            <input class="form-check-input" type="checkbox" name="validation" required>
+                            Je confirme avoir pris connaissance des conditions générales d'utilisation
                         </label>
                     </div>
                     <div class="row">
-                        <div class="col-sm-8 offset-2">
+                        <div class="col-sm-4 offset-4">
                             <button type="submit" class="btn btn-custo-inverted">Continuer</button>
                         </div>
                     </div>
