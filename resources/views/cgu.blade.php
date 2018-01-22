@@ -60,16 +60,22 @@
             <div class="col-sm-8 offset-2">
                 <form class="form" method="POST" enctype="multipart/form-data" action="/cgu">
                     {{ csrf_field() }}
-                    <div class="g-recaptcha" data-sitekey="6LcX8kEUAAAAADfQsvqlKYzbzAYVfwU2gTONK_p1"></div>
                     <div class="form-check">
                         <label class="form-check-label">
                             <input class="form-check-input" type="checkbox" value="" required>
                             Je confirme avoir pris connaissance des conditions generale d'utilisation
                         </label>
                     </div>
-                    <button type="submit" class="btn btn-custo-inverted">Continuer</button>
+                    <div class="row">
+                        <div class="col-sm-8 offset-2">
+                            <button type="submit" class="btn btn-custo-inverted">Continuer</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
     </div>
 @endsection
