@@ -44,7 +44,6 @@
                 <p>&nbsp;</p>
                 <p>Pendant toute la dur&eacute;e de l'&eacute;v&eacute;nement il n'est pas autoris&eacute; :</p>
                 <p>- de fumer dans la salle,</p>
-                <p>- de consommer de l'alcool,</p>
                 <p>- d'apporter d'autres appareils &eacute;lectriques que ceux qui sont d&eacute;finis dans le paragraphe ci-dessus. Les petits r&eacute;frig&eacute;rateurs, ventilateurs et autres sont proscrits,</p>
                 <p>- d'amener des r&eacute;chauds &agrave; gaz et autres appareils de cuisine. Il est interdit de faire la cuisine dans la salle,</p>
                 <p>- d'&eacute;couter la bande-son des jeux avec des enceintes. Pour la tranquillit&eacute; de tous, seuls les casques sont autoris&eacute;s,</p>
