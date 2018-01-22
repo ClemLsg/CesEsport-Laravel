@@ -6,6 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
+
+    protected $fillable = [
+        'name',
+        'desc',
+        'ptsrewards',
+        'players',
+        'lieu',
+        'date',
+    ];
+
     public function teams()
     {
         return $this->belongsToMany('CesEsport\Team', 'participe')->as('equipes');

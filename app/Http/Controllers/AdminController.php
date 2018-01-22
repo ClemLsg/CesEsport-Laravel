@@ -2,6 +2,8 @@
 
 namespace CesEsport\Http\Controllers;
 
+use CesEsport\Badge;
+use CesEsport\Event;
 use CesEsport\Game;
 use CesEsport\User;
 use Illuminate\Http\Request;
@@ -69,6 +71,69 @@ class AdminController extends Controller
 
             return redirect()->route('admin');
         }
+    }
+
+    public function crtbg(Request $request)
+    {
+        if($request->hasFile('badgelogo')){
+            $avatar = $request->file('badgelogo');
+            $name = $request->input('name');
+            $desc = $request->input('desc');
+            $filenamer = $request->input('filename');
+            $filename = $filenamer . '.' . $avatar->getClientOriginalExtension();
+            Image::make($avatar)->save(public_path('/badges-logo/' . $filename));
+            Badge::create([
+                'name' => $name,
+                'logo' => $filenamer,
+                'desc' => $desc,
+            ]);
+
+            return redirect()->route('admin');
+        }
+    }
+
+    public function addevent(Request $request)
+    {
+        if($request->filled('name')){
+            $name = $request->input('name');
+            $desc = $request->input('desc');
+            $points = $request->input('points');
+            $players = $request->input('players');
+            $lieu = $request->input('lieu');
+            $date = $request->input('date');
+            $jeu1 = $request->input('jeu1');
+            $jeu2 = $request->input('jeu2');
+            $jeu3 = $request->input('jeu3');
+            Event::create([
+                'name' => $name,
+                'desc' => $desc,
+                'ptsrewards' => $points,
+                'players' => $players,
+                'lieu' => $lieu,
+                'date' => $date,
+            ]);
+            $event = Event::all()->where('name', $name);
+            $game1 = Game::where('name', $jeu1)->get();
+            $game2 = Game::where('name', $jeu2)->get();
+            $game3 = Game::where('name', $jeu3)->get();
+
+            $event->games()->attach($game1->id);
+            $event->games()->attach($game2->id);
+            $event->games()->attach($game3->id);
+            return redirect()->route('admin');
+        }
+    }
+
+    public function autocomplete(Request $request)
+    {
+        $term=$request->term;
+        $data=Game::where('name', 'LIKE', '%'.$term.'%')
+            ->get();
+        $result=array();
+        foreach ($data as $key => $value){
+            $result[]=['id'=>$value->id,'value'=>$value->name];
+        }
+        return response()->json($result);
     }
 
 }

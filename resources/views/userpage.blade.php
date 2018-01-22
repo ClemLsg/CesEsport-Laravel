@@ -5,7 +5,6 @@
  * Date: 24/10/2017
  * Time: 21:23
  */
-
 ?>
 
 @extends('layouts.template')
