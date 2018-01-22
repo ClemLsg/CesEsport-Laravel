@@ -47,3 +47,7 @@ Route::get('/admin', 'AdminController@index')->name('admin');
 Route::post('/admin/addpts', 'AdminController@addpts')->name('addptns');
 Route::post('/admin/rmpts', 'AdminController@rmpts')->name('rmptns');
 Route::post('/admin/addgame', 'AdminController@addgame')->name('addgame');
+Route::post('/admin/addevent', 'AdminController@addevent')->name('addevent');
+
+Route::get('/cgu', 'CguController@index')->name('cgu');
+Route::post('/cgu', 'CguController@validate')->name('cguvalidate');
