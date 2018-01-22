@@ -36,6 +36,7 @@
     <link href="https://fonts.googleapis.com/css?family=Khand|Poppins" rel="stylesheet">
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/cesesport.css') }}" rel="stylesheet">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="https://use.fontawesome.com/344e3c0bc9.js"></script>
     <script
             src="https://code.jquery.com/jquery-3.2.1.js"
