@@ -282,30 +282,6 @@
                         <p>Virgile, l'homme présent depuis le début, admin légendaire de tournois et amateur d'ordinateurs improbables (Lenovo) .</p>
                     </div>
                 </div>
-                <br>
-                <div class="media">
-                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/v_rohel-pierre_1507556190756-jpg.png') }}" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <h3 class="mt-0">Pierre Rohel</h3>
-                        <p>Pierre, un dévoué membre du ces'esport, aussi sympathique que bel homme.</p>
-                    </div>
-                </div>
-                <br>
-                <div class="media">
-                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/v_foltzer-matthieu_1507555905515-jpg.jpg') }}" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <h3 class="mt-0">Matthieu Foltzer</h3>
-                        <p>Matthieu, notre barbu préféré inspirant la jalousie à l'égard de sa pillosité faciale, mais aussi : Community manager de renom, représentant le ces esport dans le monde froid et sans pitié des réseaux sociaux</p>
-                    </div>
-                </div>
-                <br>
-                <div class="media">
-                    <img class="d-flex align-self-center mr-3 pp-assos" src="{{ asset('site-img/Logo.png') }}" alt="Generic placeholder image">
-                    <div class="media-body">
-                        <h3 class="mt-0">Fabrice Maloyer</h3>
-                        <p>Fabrice, notre dévoué secrétaire, prêt à tout quand il s'agit d'envoyer des mails et signer des papiers.</p>
-                    </div>
-                </div>
         </div>
         </div>
     </div>
