@@ -52,3 +52,8 @@ Route::post('/admin/addevent', 'AdminController@addevent')->name('addevent');
 
 Route::get('/cgu', 'CguController@index')->name('cgu');
 Route::post('/cgu', 'CguController@validation')->name('cguvalidate');
+
+Route::get('/openlan', 'OpenlanController@index')->name('openlan');
+Route::post('/openlan/vote', 'OpenlanController@vote')->name('voteopenlan');
+Route::post('/openlan/unvote', 'OpenlanController@unvote')->name('unvoteopenlan');
+Route::post('/openlan/addgame', 'OpenlanController@addgame')->name('addgameopenlan');

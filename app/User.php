@@ -62,4 +62,14 @@ class User extends Authenticatable
     {
         return $this->belongsTo('CesEsport\Rank', 'rank_id');
     }
+
+    public function openlangame()
+    {
+        return $this->belongsToMany('CesEsport\Openlan')->as('openlangame');
+    }
+
+    public function openlan()
+    {
+        return $this->hasOne('CesEsport\Openlan', 'user_id');
+    }
 }
