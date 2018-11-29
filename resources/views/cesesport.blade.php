@@ -66,6 +66,9 @@
                                     <a href="{{ route('event') }}">EVENT</a>
                                 </li>
                                 <li>
+                                    <a href="{{ route('openlan') }}">OPENLAN</a>
+                                </li>
+                                <li>
                                     <a href="{{ route('contact') }}">CONTACT</a>
                                 </li>
                                 @guest
@@ -141,6 +144,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('event') }}">Event</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('openlan') }}">OpenLan</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('contact') }}">Contact</a>
