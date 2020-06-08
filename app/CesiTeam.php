@@ -8,6 +8,8 @@ class CesiTeam extends Model
 {
     public $timestamps = false;
 
+    protected $table = 'cesi_team';
+
     public function game()
     {
         return $this->belongsToMany('CesEsport\Game')->as('games');

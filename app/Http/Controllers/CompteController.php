@@ -26,17 +26,20 @@ class CompteController extends Controller
         $plateformes = Plateforme::all();
         $games = Game::all();
         $eventparticipesolos = $users->solos;
+        $eventparticipesolo = null;
 
         foreach ($eventparticipesolos as $bruh){
             $eventparticipesolo = $eventparticipesolos;
         }
         $eventparticipeteams = Auth::user()->teams;
+        $eventparticipeteam = null;
         foreach ($eventparticipeteams as $bruh){
             $eventparticipeteam = $eventparticipeteams;
         }
 
         $prev = 0;
         $counter = 0;
+        $gamelist = null;
 
         foreach ($solos as $test){
             if($test->id == $prev){
