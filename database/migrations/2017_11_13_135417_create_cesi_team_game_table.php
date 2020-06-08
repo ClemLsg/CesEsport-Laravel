@@ -16,7 +16,7 @@ class CreateCesiTeamGameTable extends Migration
         Schema::create('cesi_team_game', function (Blueprint $table) {
             $table->integer('cesi_team_id')->unsigned();
             $table->integer('game_id')->unsigned();
-            $table->foreign('cesi_team_id')->references('id')->on('cesi_teams');
+            $table->foreign('cesi_team_id')->references('id')->on('cesi_team');
             $table->foreign('game_id')->references('id')->on('games');
         });
     }

@@ -13,7 +13,7 @@ class CreateCesiteamTable extends Migration
      */
     public function up()
     {
-        Schema::create('cesiteam', function (Blueprint $table) {
+        Schema::create('cesi_team', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
         });
@@ -26,6 +26,6 @@ class CreateCesiteamTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cesiteam');
+        Schema::dropIfExists('cesi_team');
     }
 }
