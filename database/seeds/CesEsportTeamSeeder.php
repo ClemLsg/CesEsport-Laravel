@@ -7,7 +7,7 @@ class CesEsportTeamSeeder extends AcmeSeeder
      *
      * @return void
      */
-    protected $table = 'cesi_teams';
+    protected $table = 'cesi_team';
 
     public function getData()
     {
