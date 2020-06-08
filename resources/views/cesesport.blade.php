@@ -48,7 +48,9 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="logo-header mr-auto ml-auto">
-                    <img src="{{ asset('site-img/Logo.png') }}" alt="logo">
+                    <a href="{{ route('welcome') }}">
+                        <img src="{{ asset('site-img/Logo.png') }}" alt="logo" >
+                    </a>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -297,7 +299,7 @@
     <div class="footer-maggle">
         <div class="row">
             <div class="col-sm-9 copyright">
-                <p>© Copyright 2017 Ces'Esport - All rights reserved.</p>
+                <p>© Copyright 2020 Ces'Esport - All rights reserved.</p>
             </div>
             <div class="col-sm-3">
                 <div class="social-header mr-auto ml-auto">

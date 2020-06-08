@@ -59,7 +59,9 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="logo-header mr-auto ml-auto">
-                    <img src="{{ asset('site-img/Logo.png') }}" alt="logo">
+                    <a href="{{ route('welcome') }}">
+                        <img src="{{ asset('site-img/Logo.png') }}" alt="logo">
+                    </a>
                 </div>
             </div>
             <div class="col-sm-6">
