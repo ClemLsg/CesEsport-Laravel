@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('#carouselHeader').carousel({
-        interval: 30000
+        interval: 7000
     });
 
     $socialh =  $('.sponsor-zone').height();
