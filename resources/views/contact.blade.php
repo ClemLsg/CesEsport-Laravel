@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-2" align="center">
-                <a href="mailto:contact@ces-esoprt.fr">
+                <a href="mailto:contact@ces-esport.fr">
                 <img src="{{ asset('site-img/at.png') }}" class="compte-profile-pp" alt="logo"></a>
                 <br>
                 <br>
