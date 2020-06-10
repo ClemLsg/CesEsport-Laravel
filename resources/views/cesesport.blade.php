@@ -219,13 +219,16 @@
         <li data-target="#carouselHeader" data-slide-to="0" class="active"></li>
         <li data-target="#carouselHeader" data-slide-to="1"></li>
         <li data-target="#carouselHeader" data-slide-to="2"></li>
+        <li data-target="#carouselHeader" data-slide-to="3"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" style="background-image: url('{{ asset('site-img/league-of-legends-wallpaper-11.jpg') }}')">
+        <div class="carousel-item active" style="background-image: url('{{ asset('site-img/home-caroussel/ValorantCaroussel.jpg') }}')">
         </div>
-        <div class="carousel-item" style="background-image: url('{{ asset('site-img/800743.jpg') }}')">
+        <div class="carousel-item" style="background-image: url('{{ asset('site-img/home-caroussel/LeagueOfLegendsCaroussel.jpg') }}')">
         </div>
-        <div class="carousel-item" style="background-image: url('{{ asset('site-img/725340.jpg') }}')">
+        <div class="carousel-item" style="background-image: url('{{ asset('site-img/home-caroussel/OverwatchCaroussel.jpg') }}')">
+        </div>
+        <div class="carousel-item" style="background-image: url('{{ asset('site-img/home-caroussel/CSGoCaroussel.jpg') }}')">
         </div>
     </div>
 </div>
@@ -242,7 +245,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="sponsor">
-                        <img src="{{ asset('site-img/logo-exia.png') }}">
+                        <img src="{{ asset('site-img/logo-CESI.png') }}">
                     </div>
                 </div>
                 <div class="col-sm-4">
